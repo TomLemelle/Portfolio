@@ -1,0 +1,41 @@
+.last-work-card {
+  width: 450px;
+  min-width: 450px;
+  height: 400px;
+  min-height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: white;
+}
+
+.last-work-card-wrapper {
+  position: relative;
+  width: 425px;
+  min-width: 425px;
+  height: 375px;
+  min-height: 375px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.last-work-title {
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.last-work-subheading {
+  color: white;
+  font-size: 0.9rem;
+}
+
+.thumbnail-image {
+  position: absolute;
+  top: 9%;
+  left: 50%;
+  transform: translateX(-50%);
+}

@@ -1,0 +1,65 @@
+.realisations-homepage-container {
+  background-color: var(--grey-background);
+  position: relative;
+  overflow: hidden;
+}
+
+.realisations-homepage-wrapper {
+  max-width: 1600px;
+  margin-inline: auto;
+  padding-block: 10rem;
+
+  display: flex;
+  flex-direction: column;
+  row-gap: 103px;
+}
+
+.embla {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.embla__container {
+  display: flex;
+  gap: 4rem;
+  will-change: transform;
+}
+
+.embla__slide {
+  flex: 0 0 450px; /* Largeur d'une carte */
+  position: relative;
+}
+
+.embla__slide:last-child {
+  margin-right: 4rem; /* Espace supplémentaire sur le dernier slide */
+}
+
+/* Boutons custom */
+.arrow-back,
+.arrow-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.7); /* Fond semi-transparent */
+  color: white;
+  border-radius: 50%;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  z-index: 10;
+  transition: background 0.3s;
+}
+
+.arrow-back:hover,
+.arrow-next:hover {
+  background: rgba(0, 0, 0, 0.9); /* Fond plus sombre au survol */
+}
+
+.arrow-back {
+  left: 1rem; /* Position à gauche */
+}
+
+.arrow-next {
+  right: 1rem; /* Position à droite */
+}

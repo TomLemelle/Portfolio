@@ -1,0 +1,10 @@
+.realisations-container {
+  max-width: 1600px;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 103px;
+  padding-block: 100px;
+}

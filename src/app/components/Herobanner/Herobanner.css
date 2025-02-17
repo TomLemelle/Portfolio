@@ -1,0 +1,150 @@
+.header {
+  position: relative;
+  max-width: 1600px;
+  margin-inline: auto;
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+  border-top: 1px solid #c9c9c9;
+}
+
+.left-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 55px;
+}
+
+.left-container > li:first-of-type {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.first-line-container {
+  display: flex;
+  align-items: center;
+  column-gap: 23px;
+}
+
+.animated-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--green);
+  color: var(--green);
+  font-size: 96px;
+  font-weight: 600;
+  padding-block: 16px;
+  padding-inline: 30px;
+  line-height: 1;
+}
+
+.my-name-container {
+  font-size: 6rem;
+  font-weight: 600;
+}
+
+.tom-lemelle-container {
+  font-size: 6rem;
+  font-weight: 600;
+}
+
+.header-description {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.header-btns-container {
+  display: flex;
+  align-items: center;
+  column-gap: 55px;
+}
+
+.right-container {
+  position: relative;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 6px;
+  font-size: 1.25rem;
+  font-weight: 500;
+  background-color: var(--green);
+  color: var(--text);
+  padding-block: 25px;
+  padding-inline: 35px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  box-shadow: none; /* Pas d'ombre initiale */
+}
+
+.contact-me:hover {
+  background-color: var(--green);
+  box-shadow: 5px 5px 0px rgba(0, 0, 0, 1); /* Ombre nette, noire */
+}
+
+.my-works {
+  display: flex;
+  align-items: center;
+  column-gap: 6px;
+  font-size: 1.25rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+}
+
+.my-works:hover {
+  color: var(--green);
+}
+
+.my-work-icon:hover {
+  color: var(--green);
+}
+
+.discover-container {
+  position: absolute;
+  left: 50%;
+  bottom: 5%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 16px;
+}
+
+.discover-text {
+  font-size: 1.1rem;
+  font-weight: 500;
+  font-size: 15px;
+  color: var(--green);
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+
+.discover-btn {
+  border: 1px solid var(--foreground);
+  padding: 1rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow-square {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.discover-icon {
+  transform: rotate(-90deg);
+}

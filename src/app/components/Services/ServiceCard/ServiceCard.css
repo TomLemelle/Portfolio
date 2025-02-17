@@ -1,0 +1,32 @@
+.service-card-container {
+  height: 400px;
+  width: 350px;
+  border-left: 1px solid var(--foreground);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 30px;
+}
+
+.service-card-number {
+  font-size: 6.25rem;
+  font-family: var(--font-abyssinica);
+  color: var(--green);
+}
+
+.service-card-texts-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.service-card-title {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.service-card-description {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--grey);
+}

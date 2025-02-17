@@ -1,0 +1,80 @@
+.navbar {
+  height: 125px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-wrapper {
+  max-width: 1600px;
+  flex: 1;
+  margin-inline: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 3.125rem;
+  line-height: 1;
+}
+
+.tom-settings-icon {
+  color: var(--green);
+  position: relative;
+  top: 3px;
+  transition: transform 400ms ease-out;
+  cursor: pointer;
+}
+
+.logo-container:hover > .tom-settings-icon {
+  transform: rotate(180deg);
+}
+
+.links-container {
+  display: flex;
+  align-items: center;
+  column-gap: 50px;
+}
+
+.link {
+  font-size: 18px;
+  font-weight: 500;
+  transition: color 150ms ease-in-out;
+}
+
+.link:hover {
+  color: var(--green);
+}
+
+.navbar-contact-container {
+  border: 1px solid var(--green);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-block: 16px;
+  padding-inline: 30px;
+  background-color: transparent;
+  transition: all 150ms ease-in-out;
+}
+
+.navbar-contact-container:hover {
+  background-color: var(--green);
+}
+
+.navbar-contact-container:hover > .navbar-contact,
+.navbar-contact:hover {
+  color: white;
+}
+
+.navbar-contact {
+  color: var(--green);
+  font-size: 18px;
+  font-weight: 500;
+}

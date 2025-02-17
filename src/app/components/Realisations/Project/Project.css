@@ -1,0 +1,26 @@
+.project-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 7rem;
+}
+
+.project-texts {
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+}
+
+.project-text {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--foreground);
+}
+
+.project-link-to-another {
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-decoration: underline;
+  cursor: pointer;
+}

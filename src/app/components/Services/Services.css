@@ -1,0 +1,19 @@
+.services-container {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+.services-wrapper {
+  max-width: 1600px;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  row-gap: 103px;
+  justify-content: center;
+}
+
+.services-cards-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

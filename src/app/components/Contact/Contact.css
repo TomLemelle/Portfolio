@@ -1,0 +1,57 @@
+/* Container global de la popup */
+.contact-popup {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 500px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+  animation: slide-in 0.3s ease-out;
+}
+
+/* Animation d'apparition */
+@keyframes slide-in {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Header : Titre et bouton fermer */
+.popup-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--green);
+  color: #fff;
+  padding: 10px 15px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+}
+
+.close-button:hover {
+  color: #f6f6f6;
+}
+
+/* Corps de la popup (contenu du formulaire) */
+.popup-body {
+  padding: 1rem;
+  background-color: white;
+}
