@@ -21,12 +21,9 @@ export default function ProjectHeader({ project }) {
       case "Webflow":
         setType(`Réalisation d'un site Webflow pour ${project.company}`);
         break;
-      case "Photographie":
-        setType(`Réalisation de photos professionnel pour ${project.company}`);
-        break;
-      case "Videographie":
+      case "Photos / Vidéos":
         setType(
-          `Réalisation d'une vidéo(s) professionnel(s) pour ${project.company}`
+          `Réalisation de visuels professionnels pour ${project.company}`
         );
         break;
     }
