@@ -1,6 +1,20 @@
 .services-container {
+  position: relative;
+  background: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    var(--green-background) 50%,
+    #ffffff 100%
+  );
   padding-top: 10rem;
   padding-bottom: 10rem;
+}
+
+.header-services-quadrillage {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .services-wrapper {

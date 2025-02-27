@@ -28,10 +28,10 @@ export default function Herobanner() {
       <ul className="left-container">
         <li>
           <div className="first-line-container">
-            <div className="tom-lemelle-container">Hey!</div>
-            <div className="my-name-container">Je suis</div>
+            <h1 className="tom-lemelle-container">Tom Lemelle</h1>
+            <div className="my-name-container"></div>
           </div>
-          <h1 className="animated-container">{currentHello}</h1>
+          <h2 className="animated-container">{currentHello}</h2>
         </li>
         <li>
           <p className="header-description">
@@ -54,7 +54,7 @@ export default function Herobanner() {
           src="/tom-fullbody-pins.png"
           width={720}
           height={786}
-          alt="Picture of the author"
+          alt="Image du développeur & photographe Tom Lemelle"
         />
       </div>
 

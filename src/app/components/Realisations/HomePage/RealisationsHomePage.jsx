@@ -7,6 +7,7 @@ import TitleContainer from "../../TitleContainer/TitleContainer.jsx";
 import LastWorkCard from "./LastWorkCard/LastWorkCard.jsx";
 import portfolioProjects from "@/app/data/realisations.js";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+import { MdArrowForwardIos } from "react-icons/md";
 
 export default function RealisationsHomePage() {
   const [emblaRef, embla] = useEmblaCarousel({
@@ -29,7 +30,12 @@ export default function RealisationsHomePage() {
   return (
     <section className="realisations-homepage-container">
       <div className="realisations-homepage-wrapper">
-        <TitleContainer badge="Réalisations">
+        <TitleContainer
+          badge="Réalisations"
+          isCentered={false}
+          icon={<MdArrowForwardIos size={50} />}
+          iconLink="/realisations"
+        >
           Mes derniers projets
         </TitleContainer>
         <div className="embla" ref={emblaRef}>

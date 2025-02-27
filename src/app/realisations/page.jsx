@@ -12,10 +12,10 @@ export default function Realisations() {
   return (
     <>
       <Navbar />
-      <section className="realisations-container">
+      <main className="realisations-container">
         <RealisationsHeader choice={choice} setChoice={setChoice} />
         <RealisationsList choice={choice} setChoice={setChoice} />
-      </section>
+      </main>
     </>
   );
 }

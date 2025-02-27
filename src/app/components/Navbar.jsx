@@ -18,13 +18,10 @@ export default function Navbar() {
             <Link href="/">Accueil</Link>
           </li>
           <li className="link">
-            <Link href="/à-propos">À propos</Link>
+            <Link href="/about-me">À propos</Link>
           </li>
           <li className="link">
             <Link href="/realisations">Réalisations</Link>
-          </li>
-          <li className="link">
-            <Link href="#services">Services</Link>
           </li>
         </ul>
         <Link href="/contact">

@@ -30,7 +30,7 @@ export default function ProjectHeader({ project }) {
   };
 
   return (
-    <div className="project-title-container">
+    <header className="project-title-container">
       <span className="project-subtitle" style={{ color: project.color }}>
         {project.type + " - " + project.date}
       </span>
@@ -48,6 +48,6 @@ export default function ProjectHeader({ project }) {
           </div>
         ))}
       </div>
-    </div>
+    </header>
   );
 }

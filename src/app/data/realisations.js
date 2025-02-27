@@ -64,6 +64,9 @@ const portfolioProjects = [
       {
         photo: "realisation-project-adlcabinet.png",
       },
+      {
+        photo: "adl-cabinet-website-thumbnail.png",
+      },
     ],
     linked: 3, // Lien vers le projet de photographie
     color: "#853b90",
@@ -91,6 +94,9 @@ const portfolioProjects = [
     photos: [
       {
         photo: "realisation-project-adlcabinet.png",
+      },
+      {
+        photo: "adl-cabinet-website-thumbnail.png",
       },
     ],
     linked: 2, // Lien vers le projet de site Webflow
@@ -170,8 +176,11 @@ const portfolioProjects = [
       {
         photo: "realisation-project-adlcabinet.png",
       },
+      {
+        photo: "adl-cabinet-website-thumbnail.png",
+      },
     ],
-    linked: 3, // Lien vers le projet de photographie
+    linked: 6, // Lien vers le projet de photographie
     color: "#853b90",
     date: "Janvier 2025",
     domain: "Dentiste",
@@ -198,8 +207,11 @@ const portfolioProjects = [
       {
         photo: "realisation-project-adlcabinet.png",
       },
+      {
+        photo: "adl-cabinet-website-thumbnail.png",
+      },
     ],
-    linked: 2, // Lien vers le projet de site Webflow
+    linked: 5, // Lien vers le projet de site Webflow
     color: "#3b4990",
     date: "Janvier 2025",
     domain: "Dentiste",

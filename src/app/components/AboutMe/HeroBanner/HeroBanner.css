@@ -1,0 +1,160 @@
+.header-about-me-container {
+  position: relative;
+  height: calc(100vh - 125px);
+  background: linear-gradient(180deg, #ffffff 0%, #3b9178 100%);
+  overflow: hidden;
+}
+
+.header-about-me-wrapper {
+  position: relative;
+  max-width: 1600px;
+  height: 100%;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-tom-about-me {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+}
+
+/* Ajoutez ces styles à votre fichier HeroBanner.css */
+
+.header-about-me-jobs-wrapper {
+  position: relative;
+  z-index: 1;
+}
+
+.header-about-me-jobs-container {
+  margin-top: -100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  row-gap: 50px;
+  height: 100%;
+  position: relative;
+}
+
+.header-about-me-job {
+  color: var(
+    --background
+  ); /* Couleur d'arrière-plan par défaut pour les autres jobs */
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 1;
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  display: inline-block;
+}
+
+/* État par défaut : le premier élément (Développeur) est en vert */
+.header-about-me-job:first-of-type {
+  color: var(--green);
+}
+
+/* L'élément survolé passe en blanc */
+.header-about-me-job.hovered {
+  color: white !important;
+}
+
+/* Les éléments non survolés passent en vert */
+.header-about-me-job.not-hovered {
+  color: var(--green) !important;
+}
+
+.hover-rectangle {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  pointer-events: none;
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+
+.header-about-me-realisations-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 30px;
+  margin-top: -100px;
+}
+
+.header-about-me-realisations-text {
+  font-size: 1.1rem;
+  font-weight: 500;
+  max-width: 1000px;
+  color: var(--background);
+  line-height: 130%;
+  max-width: 290px;
+}
+
+.header-about-me-realisations-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--text);
+  padding-block: 25px;
+  padding-inline: 35px;
+  cursor: pointer;
+  transition: box-shadow 0.2s ease-in-out;
+  box-shadow: none;
+  background-color: var(--green);
+}
+
+.header-about-me-realisations-btn:hover {
+  box-shadow: 5px 5px 0px rgba(255, 255, 255, 0.5);
+}
+
+.header-about-me-h1-link {
+  position: absolute;
+  left: 50%;
+  bottom: 5%;
+  transform: translateX(-50%);
+  width: 100%;
+}
+
+.header-about-me-h1-container {
+  position: absolute;
+  left: 50%;
+  bottom: 5%;
+  transform: translateX(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 30px;
+  color: #ffffff;
+}
+
+.header-about-me-h1 {
+  text-align: center;
+  font-size: 7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--background);
+  text-shadow: 0px -1px 34px rgba(0, 0, 0, 0.5);
+}
+
+.header-about-me-h1-arrow {
+  opacity: 1;
+  animation: bounce 1.5s infinite ease-in-out;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}

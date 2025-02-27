@@ -9,7 +9,7 @@ export default function RealisationsHeader({ choice, setChoice }) {
   };
 
   return (
-    <div className="realisations-title-container">
+    <header className="realisations-title-container">
       <h1 className="realisations-title">Toutes mes réalisations</h1>
       <p className="realisations-description">
         Développement d’apps, sites Webflow dynamiques, images percutantes en
@@ -41,6 +41,6 @@ export default function RealisationsHeader({ choice, setChoice }) {
           Photos / Vidéos
         </div>
       </div>
-    </div>
+    </header>
   );
 }

@@ -23,9 +23,9 @@ export default function Page() {
   return (
     <>
       <Navbar />
-      <section className="project-container">
+      <main className="project-container">
         <Project project={project} />
-      </section>
+      </main>
     </>
   );
 }
