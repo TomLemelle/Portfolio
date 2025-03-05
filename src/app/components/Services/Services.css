@@ -18,7 +18,7 @@
 }
 
 .services-wrapper {
-  max-width: 1600px;
+  max-width: 90%;
   margin-inline: auto;
   display: flex;
   flex-direction: column;

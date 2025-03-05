@@ -8,6 +8,7 @@ import { FaPhoneFlip } from "react-icons/fa6";
 import { useEffect, useState } from "react";
 import Contact from "./components/Contact/Contact";
 import { RxCross2 } from "react-icons/rx";
+import { IoIosChatbubbles } from "react-icons/io";
 
 export default function Home() {
   const [contactIsOpen, setContactIsOpen] = useState(false);
@@ -43,7 +44,13 @@ export default function Home() {
         className="contact-me-bubble wiggling wiggle-button"
         onClick={() => setContactIsOpen(!contactIsOpen)}
       >
-        <div>{contactIsOpen ? <RxCross2 size={30} /> : "Contactez-moi"}</div>
+        <div>
+          {contactIsOpen ? (
+            <RxCross2 size={30} />
+          ) : (
+            <IoIosChatbubbles size={30} className="chat-bubble" />
+          )}
+        </div>
       </div>
       {contactIsOpen && (
         <Contact closeContact={() => setContactIsOpen(false)} />

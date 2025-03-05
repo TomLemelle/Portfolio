@@ -93,9 +93,19 @@ export default function AboutMeHeroBanner() {
             Découvrir mes réalisations
           </div>
         </div>
-        <div className="header-about-me-h1-container">
-          <h1 className="header-about-me-h1">Tom Lemelle</h1>
-        </div>
+        <Link href="#about" className="header-about-me-h1-link">
+          <div className="header-about-me-h1-container">
+            <MdOutlineKeyboardArrowDown
+              size={120}
+              className="header-about-me-h1-arrow"
+            />
+            <h1 className="header-about-me-h1">Tom Lemelle</h1>
+            <MdOutlineKeyboardArrowDown
+              size={120}
+              className="header-about-me-h1-arrow"
+            />
+          </div>
+        </Link>
       </div>
     </header>
   );

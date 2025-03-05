@@ -7,7 +7,7 @@
 
 .header-about-me-wrapper {
   position: relative;
-  max-width: 1600px;
+  max-width: 90%;
   height: 100%;
   margin-inline: auto;
   display: flex;

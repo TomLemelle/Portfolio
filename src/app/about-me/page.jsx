@@ -3,6 +3,7 @@
 import "./AboutMe.css";
 import Navbar from "../components/Navbar";
 import AboutMeHeroBanner from "../components/AboutMe/HeroBanner/AboutMeHeroBanner";
+import AccordionGallery from "../components/AboutMe/AccordionGallery/AccordionGallery";
 
 export default function AboutMe() {
   return (
@@ -10,6 +11,7 @@ export default function AboutMe() {
       <Navbar />
       <main className="about-me-container">
         <AboutMeHeroBanner />
+        <AccordionGallery />
       </main>
     </>
   );

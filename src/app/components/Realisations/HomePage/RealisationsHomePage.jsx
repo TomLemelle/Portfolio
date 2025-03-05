@@ -33,7 +33,7 @@ export default function RealisationsHomePage() {
         <TitleContainer
           badge="Réalisations"
           isCentered={false}
-          icon={<MdArrowForwardIos size={50} />}
+          icon={<MdArrowForwardIos size={45} />}
           iconLink="/realisations"
         >
           Mes derniers projets

@@ -5,7 +5,7 @@
 }
 
 .navbar-wrapper {
-  max-width: 1600px;
+  max-width: 90%;
   flex: 1;
   margin-inline: auto;
   display: flex;
