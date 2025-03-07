@@ -33,6 +33,21 @@ export default function AboutMeHeroBanner() {
     setHoveredIndex(null);
   };
 
+  const jobs = [
+    {
+      label: "Développeur",
+      value: "dev",
+    },
+    {
+      label: "Photographe",
+      value: "photo",
+    },
+    {
+      label: "Vidéaste",
+      value: "video",
+    },
+  ];
+
   return (
     <header className="header-about-me-container">
       <Image
@@ -55,7 +70,7 @@ export default function AboutMeHeroBanner() {
             className="header-about-me-jobs-container"
             onMouseLeave={handleMouseLeave}
           >
-            {["Développeur", "Photographe", "Vidéaste"].map((job, index) => (
+            {jobs.map((job, index) => (
               <li
                 key={index}
                 ref={(el) => (jobsRef.current[index] = el)}
@@ -68,7 +83,7 @@ export default function AboutMeHeroBanner() {
                 }`}
                 onMouseEnter={() => handleMouseEnter(index)}
               >
-                {job}
+                <Link href={"#" + job.value}>{job.label}</Link>
               </li>
             ))}
             {hoveredIndex !== null && (
