@@ -9,6 +9,7 @@ import { useEffect, useState } from "react";
 import Contact from "./components/Contact/Contact";
 import { RxCross2 } from "react-icons/rx";
 import { IoIosChatbubbles } from "react-icons/io";
+import TrustedBy from "./components/TrustedBy/TrustedBy";
 
 export default function Home() {
   const [contactIsOpen, setContactIsOpen] = useState(false);
@@ -38,6 +39,7 @@ export default function Home() {
       <Navbar />
       <Herobanner />
       <Services />
+      <TrustedBy />
       <RealisationsHomePage />
 
       <div

@@ -29,7 +29,6 @@ export default function AboutMe() {
         "Présentation",
         "Projets commerciaux",
         "Projets artistiques",
-        "Création impactante",
       ],
       color: "#3b4990",
     },

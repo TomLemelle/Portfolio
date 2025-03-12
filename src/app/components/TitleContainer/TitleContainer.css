@@ -13,12 +13,12 @@
 .badge-container {
   font-family: var(--font-abyssinica);
   color: var(--green);
-  font-size: 20px;
+  font-size: 1.25rem;
   text-align: center;
 }
 
 .title {
-  font-size: 60px;
+  font-size: 3.75rem;
   font-weight: 600;
   max-width: 712px;
   text-align: center;

@@ -1,0 +1,16 @@
+.trustedby-container {
+    position: relative;
+    overflow: hidden;
+    background-color: var(--grey-background);
+  }
+
+.trustedby-wrapper {
+max-width: 90%;
+margin-inline: auto;
+padding-block: 5rem;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+row-gap: 103px;
+}
