@@ -6,6 +6,7 @@ import { use, useEffect, useState } from "react";
 import portfolioProjects from "@/app/data/realisations";
 import Navbar from "@/app/components/Navbar";
 import Realisation from "@/app/components/Realisations/Project/Realisation";
+import Footer from "@/app/footer/Footer";
 
 export default function Page() {
   const [project, setProject] = useState(null);
@@ -78,6 +79,7 @@ export default function Page() {
           </div>
         )}
       </main>
+      <Footer />
     </>
   );
 }

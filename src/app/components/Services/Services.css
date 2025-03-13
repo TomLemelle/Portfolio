@@ -1,11 +1,5 @@
 .services-container {
   position: relative;
-  background: linear-gradient(
-    180deg,
-    #ffffff 0%,
-    var(--green-background) 50%,
-    #ffffff 100%
-  );
   padding-top: 10rem;
   padding-bottom: 10rem;
 }

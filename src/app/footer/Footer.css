@@ -1,0 +1,11 @@
+.tom-settings-icon {
+  color: var(--green);
+  position: relative;
+  top: 3px;
+  transition: transform 400ms ease-out;
+  cursor: pointer;
+}
+
+.footer-logo-container:hover > .tom-settings-icon {
+  transform: rotate(180deg);
+}

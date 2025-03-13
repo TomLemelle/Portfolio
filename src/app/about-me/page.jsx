@@ -4,6 +4,7 @@ import "./AboutMe.css";
 import Navbar from "../components/Navbar";
 import AboutMeHeroBanner from "../components/AboutMe/HeroBanner/AboutMeHeroBanner";
 import Slide from "../components/AboutMe/Slide/Slide";
+import Footer from "../footer/Footer";
 
 export default function AboutMe() {
   const profils = [
@@ -25,11 +26,7 @@ export default function AboutMe() {
       domaine: "Production Audiovisuelle",
       description:
         "La vidéo est une passion qui est née naturellement de mon amour pour la photographie. Une fois que j'ai perfectionné ma pratique de la photo, la vidéo est apparue comme une extension logique de cette passion créative. C’est ainsi qu'est née PICTION, ma boîte de production audiovisuelle, où je mets en œuvre mes compétences techniques et artistiques pour produire des vidéos qui allient innovation et impact. PICTION travaillait aussi bien sur des projets commerciaux que créatifs, avec une attention particulière portée à la qualité de chaque projet.",
-      tags: [
-        "Présentation",
-        "Projets commerciaux",
-        "Projets artistiques",
-      ],
+      tags: ["Présentation", "Projets commerciaux", "Projets artistiques"],
       color: "#3b4990",
     },
   ];
@@ -52,6 +49,7 @@ export default function AboutMe() {
           />
         ))}
       </main>
+      <Footer />
     </>
   );
 }

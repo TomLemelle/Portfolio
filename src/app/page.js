@@ -10,6 +10,7 @@ import Contact from "./components/Contact/Contact";
 import { RxCross2 } from "react-icons/rx";
 import { IoIosChatbubbles } from "react-icons/io";
 import TrustedBy from "./components/TrustedBy/TrustedBy";
+import Footer from "./footer/Footer";
 
 export default function Home() {
   const [contactIsOpen, setContactIsOpen] = useState(false);
@@ -41,6 +42,7 @@ export default function Home() {
       <Services />
       <TrustedBy />
       <RealisationsHomePage />
+      <Footer />
 
       <div
         className="contact-me-bubble wiggling wiggle-button"
