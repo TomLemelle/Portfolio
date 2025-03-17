@@ -8,6 +8,7 @@ import LastWorkCard from "./LastWorkCard/LastWorkCard.jsx";
 import portfolioProjects from "@/app/data/realisations.js";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { MdArrowForwardIos } from "react-icons/md";
+import Image from "next/image";
 
 export default function RealisationsHomePage() {
   const [emblaRef, embla] = useEmblaCarousel({
@@ -29,6 +30,23 @@ export default function RealisationsHomePage() {
 
   return (
     <section className="realisations-homepage-container">
+      <Image
+                    className="header-services-quadrillage"
+                    src="/pegboard-2.jpg"
+                    alt="Photo de Tom Lemelle"
+                    width={1000} // Valeur arbitraire qui sera réduite avec CSS
+                    height={1000}
+                    style={{
+                      width: "60%",
+                      height: "auto",
+                      borderRadius: "30px",
+                      objectFit: "cover",
+                      maskImage:
+                        "radial-gradient(circle, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 100%)",
+                      WebkitMaskImage:
+                        "radial-gradient(circle, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 100%)",
+                    }}
+                  />
       <div className="realisations-homepage-wrapper">
         <TitleContainer
           badge="Réalisations"
