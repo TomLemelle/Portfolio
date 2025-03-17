@@ -1,8 +1,8 @@
 "use client";
 
 import "./Herobanner.css";
+import "./responsive.css";
 import { PiLinkBreakLight } from "react-icons/pi";
-import { MdArrowBackIos } from "react-icons/md";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import Link from "next/link";
@@ -48,6 +48,23 @@ export default function Herobanner() {
             </div>
           </Link>
         </li>
+        <li className="discover-mobile">
+          <div className="discover-container">
+            <div className="discover-text">Découvrir</div>
+            <Link href="#services">
+              <div className="discover-btn">
+                <div className="arrow-square">
+                  <Image
+                    src="/arrow-down.png"
+                    width={20}
+                    height={40}
+                    alt="See more icon"
+                  />
+                </div>
+              </div>
+            </Link>
+          </div>
+        </li>
       </ul>
       <div className="right-container">
         <Image
@@ -58,7 +75,7 @@ export default function Herobanner() {
         />
       </div>
 
-      <div className="discover-container">
+      <div className="discover-container discover-desktop">
         <div className="discover-text">Découvrir</div>
         <Link href="#services">
           <div className="discover-btn">

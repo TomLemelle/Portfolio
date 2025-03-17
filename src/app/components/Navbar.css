@@ -78,3 +78,127 @@
   font-size: 18px;
   font-weight: 500;
 }
+
+/* Garder le style desktop inchangé */
+@media (min-width: 769px) {
+  .mobile-overlay {
+    display: none;
+  }
+
+  .contact-desktop {
+    display: block;
+  }
+}
+
+/* Affichage du burger en mobile */
+@media (max-width: 768px) {
+  .links-container,
+  .navbar-contact-container {
+    display: none;
+  }
+
+  .navbar-contact-container {
+    display: none;
+  }
+
+  .mobile-overlay {
+    display: block;
+  }
+
+  .burger-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px; /* Taille fixe */
+    height: 40px;
+    cursor: pointer;
+  }
+
+  .burger-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px; /* Garde l'icône centrée */
+    height: 30px;
+  }
+
+  .contact-desktop {
+    display: none;
+  }
+}
+
+.mobile-overlay {
+  background: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 999;
+}
+
+/* Menu mobile en plein écran */
+.mobile-menu {
+  position: relative;
+  max-width: 90%;
+  margin-inline: auto;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Bouton de fermeture */
+.close-menu {
+  position: absolute;
+  height: 125px;
+  width: 40px;
+  top: 0px;
+  right: 0px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: white;
+}
+
+/* Liste des liens */
+.mobile-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.mobile-links .link {
+  padding: 20px;
+  font-size: 22px;
+  font-weight: 500;
+  color: white;
+}
+
+.mobile-links .link:hover {
+  color: var(--green);
+}
+
+/* Style bouton contact */
+.mobile-links .navbar-contact {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  border: 1px solid white;
+  transition: all 150ms ease-in-out;
+  color: white;
+}
+
+.mobile-links .navbar-contact:hover {
+  background-color: white;
+  color: black;
+}
+
+.mobile-close-btn {
+  position: relative;
+  z-index: 100000;
+}

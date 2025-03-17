@@ -148,3 +148,11 @@
 .discover-icon {
   transform: rotate(-90deg);
 }
+
+.discover-mobile {
+  display: none;
+}
+
+.discover-desktop {
+  display: flex;
+}

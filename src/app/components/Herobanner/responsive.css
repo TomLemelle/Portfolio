@@ -1,0 +1,33 @@
+@media (max-width: 1650px) {
+  .left-container {
+    width: 100%;
+  }
+  .right-container {
+    display: none;
+  }
+
+  .discover-mobile {
+    display: block;
+  }
+
+  .discover-desktop {
+    display: none;
+  }
+
+  .discover-container {
+    position: static;
+    transform: unset;
+  }
+
+  .tom-lemelle-container {
+    font-size: 4rem;
+  }
+
+  .animated-container {
+    font-size: 4rem;
+  }
+
+  .header-description {
+    font-size: 1.1rem;
+  }
+}

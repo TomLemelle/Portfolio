@@ -2,6 +2,7 @@ import Image from "next/image";
 import TitleContainer from "../TitleContainer/TitleContainer";
 import ServiceCard from "./ServiceCard/ServiceCard";
 import "./Services.css";
+import "./responsive.css";
 
 export default function Services() {
   return (
@@ -9,7 +10,7 @@ export default function Services() {
       <Image
         className="header-services-quadrillage"
         src="/quadrillage.png"
-        alt="Photo de Tom Lemelle"
+        alt="Quadrillage pour habiller la page"
         width={1000} // Valeur arbitraire qui sera réduite avec CSS
         height={1000}
         style={{
