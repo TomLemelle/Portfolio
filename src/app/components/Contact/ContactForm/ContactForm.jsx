@@ -1,69 +1,53 @@
-import React from "react";
-import "./ContactForm.css";
+"use client";
+
+import { motion } from "framer-motion";
+import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
+import { SiMalt } from "react-icons/si";
 
 export default function ContactForm() {
   return (
-    <form className="contact-form">
-      {/* Nom et Prénom */}
-      <div className="form-row">
-        <div className="form-group">
-          <label htmlFor="firstName">Prénom</label>
-          <input
-            type="text"
-            id="firstName"
-            name="firstName"
-            placeholder="Votre prénom"
-          />
-        </div>
-        <div className="form-group">
-          <label htmlFor="lastName">Nom de famille</label>
-          <input
-            type="text"
-            id="lastName"
-            name="lastName"
-            placeholder="Votre nom de famille"
-          />
-        </div>
-      </div>
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: 20 }}
+      transition={{ duration: 0.5 }}
+      className="flex flex-col items-center text-center p-6 w-full max-w-lg mx-auto"
+    >
+      <h2 className="text-lg md:text-2xl font-bold text-gray-800">
+        tom.lemelle@gmail.com
+      </h2>
 
-      {/* Numéro de téléphone */}
-      <div className="form-group">
-        <label htmlFor="phone">Numéro de téléphone</label>
-        <input
-          type="tel"
-          id="phone"
-          name="phone"
-          placeholder="Votre numéro de téléphone"
-        />
-      </div>
+      <div className="w-20 h-1 bg-green my-4 rounded-full"></div>
 
-      {/* Email */}
-      <div className="form-group">
-        <label htmlFor="email">Email</label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          placeholder="Votre adresse email"
-        />
-      </div>
+      <p className="text-lg md:text-xl text-gray-700">+33 6 12 34 56 78</p>
 
-      {/* Message */}
-      <div className="form-group">
-        <label htmlFor="message">Message</label>
-        <textarea
-          name="message"
-          id="message"
-          defaultValue={
-            "Bonjour,\n\nJ'aimerais créer un site web pour [précisez votre besoin ou type de site]."
-          }
-        ></textarea>
+      {/* Liens de contact avec logos */}
+      <div className="flex mt-6 justify-center space-x-6">
+        <a
+          href="https://www.linkedin.com/in/tom-lemelle/"
+          className="text-green hover:text-gray-900 transition-transform transform hover:scale-110"
+        >
+          <FaLinkedin className="w-6 h-6" />
+        </a>
+        <a
+          href="https://www.malt.fr/profile/tomlemelle"
+          className="text-green hover:text-gray-900 transition-transform transform hover:scale-110"
+        >
+          <SiMalt className="w-7 h-7" />
+        </a>
+        <a
+          href="https://github.com/TomLemelle"
+          className="text-green hover:text-gray-900 transition-transform transform hover:scale-110"
+        >
+          <FaGithub className="w-6 h-6" />
+        </a>
+        <a
+          href="https://www.instagram.com/tomlemelle"
+          className="text-green hover:text-gray-900 transition-transform transform hover:scale-110"
+        >
+          <FaInstagram className="w-6 h-6" />
+        </a>
       </div>
-
-      {/* Bouton */}
-      <button type="submit" className="form-button">
-        Contactez-moi
-      </button>
-    </form>
+    </motion.div>
   );
 }
