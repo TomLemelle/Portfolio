@@ -6,8 +6,11 @@ import { PiLinkBreakLight } from "react-icons/pi";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import { useTranslation } from "@/app/contexts/TranslationProvider";
 
 export default function Herobanner() {
+  const { dictionary } = useTranslation();
+
   const hello = ["Développeur", "Photographe", "Vidéaste"];
   const [currentHello, setCurrentHello] = useState("Développeur");
 
@@ -40,7 +43,7 @@ export default function Herobanner() {
           </p>
         </li>
         <li className="header-btns-container">
-          <div className="contact-me">Contactez moi</div>
+          <div className="contact-me">{dictionary.contactMe}</div>
           <Link href="/realisations">
             <div className="my-works">
               Réalisations

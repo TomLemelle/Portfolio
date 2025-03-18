@@ -5,6 +5,7 @@ import { IoMenu, IoClose } from "react-icons/io5";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 import "./Navbar.css";
+import LanguageSwitcher from "../utils/LanguageSwitcher";
 
 export default function Navbar({ openContact = null }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,6 +21,8 @@ export default function Navbar({ openContact = null }) {
               <IoIosSettings className="tom-settings-icon" size={24} />
             </div>
           </Link>
+
+          <LanguageSwitcher />
 
           {/* Menu burger animé */}
           <div
