@@ -88,6 +88,10 @@
   .contact-desktop {
     display: block;
   }
+
+  .burger-menu {
+    display: none;
+  }
 }
 
 /* Affichage du burger en mobile */
