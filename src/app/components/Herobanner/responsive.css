@@ -31,3 +31,20 @@
     font-size: 1.1rem;
   }
 }
+
+@media (max-width: 450px) {
+  .animated-container {
+    font-size: 2.75rem;
+  }
+  .tom-lemelle-container {
+    font-size: 2.75rem;
+  }
+
+  .contact-me {
+    font-size: 1rem;
+  }
+
+  .my-works {
+    font-size: 1rem;
+  }
+}
