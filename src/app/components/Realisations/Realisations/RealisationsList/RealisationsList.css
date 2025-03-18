@@ -21,8 +21,8 @@
   gap: 2rem;
 }
 
-.realisations-list-content-container.justify-space-between {
-  justify-content: space-between;
+.realisations-list-content-container.justify-center {
+  justify-content: center;
 }
 
 .realisations-list-content-container.justify-flex-start {

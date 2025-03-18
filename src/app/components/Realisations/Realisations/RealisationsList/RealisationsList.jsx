@@ -1,6 +1,7 @@
 "use client";
 
 import "./RealisationsList.css";
+import "./responsive.css";
 import LastWorkCard from "../../HomePage/LastWorkCard/LastWorkCard";
 import portfolioProjects from "@/app/data/realisations";
 import { useEffect, useState } from "react";
@@ -46,7 +47,7 @@ export default function RealisationsList({ choice, setChoice }) {
 
   return (
     <div className="realisations-list-container">
-      <div className="realisations-list-title-container"> 
+      <div className="realisations-list-title-container">
         <h2 className="realisations-list-title">{choice}</h2>
 
         {choice !== "" && (
@@ -63,9 +64,7 @@ export default function RealisationsList({ choice, setChoice }) {
       </div>
       <div
         className={`realisations-list-content-container ${
-          realisations.length >= 3
-            ? "justify-space-between"
-            : "justify-flex-start"
+          realisations.length >= 3 ? "justify-center" : "justify-flex-start"
         }`}
       >
         {currentRealisations.length !== 0 &&
