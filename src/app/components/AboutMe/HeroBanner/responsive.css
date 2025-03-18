@@ -1,0 +1,95 @@
+/* 🌍 Grand écran - Ordinateurs */
+@media (min-width: 1060px) {
+  .header-about-me-container {
+    height: calc(100vh - 125px);
+  }
+  .header-tom-about-me {
+    height: calc(100%);
+    width: auto;
+  }
+}
+
+/* 🌍 Moyen écran - Ordinateurs */
+@media (max-width: 1059px) {
+  .header-about-me-container {
+    height: calc(75vh - 125px);
+  }
+  .header-tom-about-me {
+    height: calc(100%);
+    width: auto;
+  }
+
+  .header-about-me-h1 {
+    font-size: 4.5rem !important; /* Taille plus petite */
+  }
+  .header-about-me-job {
+    font-size: 2.6rem !important;
+  }
+}
+
+/* 🌍 Petit écran - Ordinateurs */
+@media (max-width: 976px) {
+  .header-about-me-container {
+    height: calc(100vh - 125px);
+  }
+  .header-tom-about-me {
+    display: none;
+  }
+
+  .header-about-me-wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header-about-me-jobs-container {
+    align-items: center;
+    margin-top: -200px;
+  }
+
+  .header-about-me-realisations-container {
+    margin-top: 0;
+  }
+
+  .header-about-me-job {
+    text-align: center;
+  }
+
+  .header-about-me-realisations-text {
+    display: none;
+  }
+
+  .header-about-me-h1 {
+    font-size: 3rem !important; /* Encore plus petit */
+  }
+  .header-about-me-job {
+    font-size: 2.4rem !important;
+  }
+
+  .header-about-me-h1-container {
+    justify-content: space-between;
+    column-gap: 0;
+  }
+}
+
+/* 🖥️ Petits écrans d'ordi polices (Max width: 1276px) */
+@media (max-width: 1276px) {
+  .header-about-me-h1 {
+    font-size: 5rem;
+  }
+  .header-about-me-job {
+    font-size: 2.8rem;
+  }
+}
+
+/* 📏 Petits écrans d'ordi avec faible hauteur (spécifique) */
+@media (max-height: 700px) {
+  .header-tom-about-me {
+    bottom: -95px;
+    width: 795px;
+    height: auto;
+  }
+  .header-about-me-container {
+    height: calc(100vh - 125px);
+  }
+}

@@ -9,7 +9,7 @@ import Footer from "../footer/Footer";
 export default function AboutMe() {
   const profils = [
     {
-      domaine: "Développeur Web",
+      domaine: "Développement Web",
       description:
         "Passionné par la tech depuis mon plus jeune âge, je suis développeur web depuis 5 ans. Expert en React, Next.js, Vue.js et AdonisJS, j’ai acquis une solide expertise technique. Mon parcours entrepreneurial avec SafeEat et Citizens m’a permis de perfectionner mes compétences dans la création de solutions innovantes.",
       tags: ["React", "Next.js", "Vue.js", "AdonisJS"],

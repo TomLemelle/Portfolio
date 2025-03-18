@@ -1,6 +1,7 @@
-import { useState, useRef, useEffect } from "react";
-import Image from "next/image";
 import "./HeroBanner.css";
+import "./responsive.css";
+import { useState, useRef } from "react";
+import Image from "next/image";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import Link from "next/link";
 

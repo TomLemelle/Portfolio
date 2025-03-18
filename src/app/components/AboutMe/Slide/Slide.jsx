@@ -13,7 +13,7 @@ export default function Slide({
   reverseOrder = false,
 }) {
   const chooseRightId = () => {
-    if (title === "Développeur Web") {
+    if (title === "Développement Web") {
       return "dev";
     } else if (title === "Photographie") {
       return "photo";
