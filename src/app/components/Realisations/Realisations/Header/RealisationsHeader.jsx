@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import "./RealisationsHeader.css";
+import "./responsive.css";
 
 export default function RealisationsHeader({ choice, setChoice }) {
   const handleChoice = (value) => {
