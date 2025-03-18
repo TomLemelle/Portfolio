@@ -34,3 +34,9 @@
   justify-content: center;
   text-decoration: none;
 }
+
+@media (max-width: 717px) {
+  .badge-container {
+    text-align: center !important;
+  }
+}

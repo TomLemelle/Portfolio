@@ -3,6 +3,13 @@
   overflow: hidden;
 }
 
+.realisations-quadrillage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .realisations-homepage-wrapper {
   max-width: 90%;
   margin-inline: auto;

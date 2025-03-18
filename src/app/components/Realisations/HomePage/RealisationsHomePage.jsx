@@ -31,7 +31,7 @@ export default function RealisationsHomePage() {
   return (
     <section className="realisations-homepage-container">
       <Image
-        className="header-services-quadrillage"
+        className="realisations-quadrillage"
         src="/pegboard-2.jpg"
         alt="Photo de Tom Lemelle"
         width={1000} // Valeur arbitraire qui sera réduite avec CSS

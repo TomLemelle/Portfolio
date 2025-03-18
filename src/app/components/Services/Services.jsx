@@ -7,24 +7,6 @@ import "./responsive.css";
 export default function Services() {
   return (
     <section className="services-container" id="services">
-      <Image
-        className="header-services-quadrillage"
-        src="/quadrillage.png"
-        alt="Quadrillage pour habiller la page"
-        width={1000} // Valeur arbitraire qui sera réduite avec CSS
-        height={1000}
-        style={{
-          width: "60%",
-          height: "auto",
-          borderRadius: "30px",
-          objectFit: "cover",
-          maskImage:
-            "radial-gradient(circle, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 100%)",
-          WebkitMaskImage:
-            "radial-gradient(circle, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 100%)",
-        }}
-      />
-
       <div className="services-wrapper">
         <TitleContainer badge="Services" isCentered>
           Les services que je propose

@@ -1,8 +1,16 @@
 import "./ServiceCard.css";
+import "./responsive.css";
 
 export default function ServiceCard({ number, title, description, color }) {
   return (
-    <div className="service-card-container">
+    <div
+      className="service-card-container"
+      style={{
+        backgroundImage: "url('/quadrillage.png')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >
       <div className="service-card-number" style={{ color: color }}>
         {number}
       </div>
