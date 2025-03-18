@@ -11,9 +11,11 @@ import { RxCross2 } from "react-icons/rx";
 import { IoIosChatbubbles } from "react-icons/io";
 import TrustedBy from "./components/TrustedBy/TrustedBy";
 import Footer from "./footer/Footer";
+import useClickOutside from "./hooks/useClickOutside";
 
 export default function Home() {
   const [contactIsOpen, setContactIsOpen] = useState(false);
+  const modalRef = useClickOutside(() => setContactIsOpen(false));
 
   useEffect(() => {
     const button = document.querySelector(".wiggle-button");
@@ -37,7 +39,7 @@ export default function Home() {
 
   return (
     <main className="main">
-      <Navbar />
+      <Navbar openContact={() => setContactIsOpen(!contactIsOpen)} />
       <Herobanner />
       <Services />
       <TrustedBy />
@@ -57,7 +59,7 @@ export default function Home() {
         </div>
       </div>
       {contactIsOpen && (
-        <Contact closeContact={() => setContactIsOpen(false)} />
+        <Contact closeContact={() => setContactIsOpen(false)} ref={modalRef} />
       )}
     </main>
   );

@@ -2,9 +2,9 @@ import "./Contact.css";
 import { FaTimes } from "react-icons/fa";
 import ContactForm from "./ContactForm/ContactForm";
 
-export default function Contact({ closeContact }) {
+export default function Contact({ closeContact, ref }) {
   return (
-    <div className="contact-popup">
+    <div className="contact-popup" ref={ref}>
       <div className="popup-header">
         <span>Contacter Tom Lemelle</span>
         <button className="close-button">

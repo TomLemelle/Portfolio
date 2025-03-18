@@ -87,6 +87,7 @@
 
   .contact-desktop {
     display: block;
+    cursor: pointer;
   }
 
   .burger-menu {

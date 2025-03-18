@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 import "./Navbar.css";
 
-export default function Navbar() {
+export default function Navbar({ openContact = null }) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -53,11 +53,11 @@ export default function Navbar() {
           </ul>
 
           {/* Bouton Contact */}
-          <Link href="/contact" className="contact-desktop">
+          <div className="contact-desktop" onClick={openContact}>
             <div className="navbar-contact-container">
               <div className="navbar-contact">Contact</div>
             </div>
-          </Link>
+          </div>
         </div>
       </nav>
 
@@ -90,13 +90,9 @@ export default function Navbar() {
                   </Link>
                 </li>
                 <li>
-                  <Link
-                    href="/contact"
-                    className="navbar-contact"
-                    onClick={() => setIsOpen(false)}
-                  >
+                  <div className="navbar-contact" onClick={openContact}>
                     Contact
-                  </Link>
+                  </div>
                 </li>
               </ul>
             </motion.div>
