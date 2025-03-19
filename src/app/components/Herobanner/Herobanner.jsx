@@ -77,7 +77,7 @@ export default function Herobanner({ ref, toggleContact = null }) {
       </ul>
       <div className="right-container">
         <Image
-          src="/tom-fullbody-pins.png"
+          src={"/" + dictionary.home.herobanner.image}
           width={720}
           height={786}
           alt="Image du développeur & photographe Tom Lemelle"
