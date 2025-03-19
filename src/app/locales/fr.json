@@ -6,6 +6,46 @@
       "description": "Je conçois des sites internet et les sublime avec de belles photos en tant que développeur web et photographe depuis plus de 3 ans.",
       "projects": "Réalisations",
       "image": "tom-fullbody-pins.png"
+    },
+    "services": {
+      "badge": "Services",
+      "heading": "Les services que je propose",
+      "serviceCards": {
+        "custom": {
+          "heading": "Application personnalisée",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor."
+        },
+        "webflow": {
+          "heading": "Webflow",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor."
+        },
+        "photography": {
+          "heading": "Photographie",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor."
+        },
+        "video": {
+          "heading": "Vidéo",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor."
+        }
+      }
+    },
+    "trustedBy": {
+      "heading": "Ils m'ont fait confiance"
+    },
+    "lastProjects": {
+      "badge": "Réalisations",
+      "heading": "Mes derniers projets"
     }
+  },
+  "footer": {
+    "quickLinks": {
+      "quickLinks": "Liens rapides",
+      "home": "Accueil",
+      "about": "À propos",
+      "projects": "Réalisaitons",
+      "contact": "Contactez-moi"
+    },
+    "followMe": "Suivez-moi",
+    "copyright": "Tous droits réservés"
   }
 }

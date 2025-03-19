@@ -1,11 +1,51 @@
 {
   "home": {
     "herobanner": {
-      "contactMe": "Contattemi",
-      "discover": "Scoprire",
-      "description": "Realizzo siti web e li arricchisco con bellissime foto, lavorando come sviluppatore web e fotografo da più di 3 anni.",
+      "contactMe": "Contattami",
+      "discover": "Scopri",
+      "description": "Progetto siti web e li arricchisco con foto straordinarie, lavorando come sviluppatore web e fotografo da oltre 3 anni.",
       "projects": "Progetti",
       "image": "tom-fullbody-pins-it.png"
+    },
+    "services": {
+      "badge": "Servizi",
+      "heading": "I servizi che offro",
+      "serviceCards": {
+        "custom": {
+          "heading": "Applicazione personalizzata",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor."
+        },
+        "webflow": {
+          "heading": "Webflow",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor."
+        },
+        "photography": {
+          "heading": "Fotografia",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor."
+        },
+        "video": {
+          "heading": "Video",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor."
+        }
+      }
+    },
+    "trustedBy": {
+      "heading": "Si sono fidati di me"
+    },
+    "lastProjects": {
+      "badge": "Progetti",
+      "heading": "I miei ultimi progetti"
     }
+  },
+  "footer": {
+    "quickLinks": {
+      "quickLinks": "Link rapidi",
+      "home": "Home",
+      "about": "Chi sono",
+      "projects": "Progetti",
+      "contact": "Contattami"
+    },
+    "followMe": "Seguitemi",
+    "copyright": "Tutti i diritti riservati"
   }
 }

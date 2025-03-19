@@ -3,9 +3,49 @@
     "herobanner": {
       "contactMe": "Contact me",
       "discover": "Discover",
-      "description": "I design websites and enhance them with beautiful photos as a web developer and photographer for over 3 years.",
-      "projects": "Works projects",
+      "description": "I design websites and enhance them with stunning photos as a web developer and photographer for over 3 years.",
+      "projects": "Projects",
       "image": "tom-fullbody-pins-en.png"
+    },
+    "services": {
+      "badge": "Services",
+      "heading": "The services I offer",
+      "serviceCards": {
+        "custom": {
+          "heading": "Custom application",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor."
+        },
+        "webflow": {
+          "heading": "Webflow",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor."
+        },
+        "photography": {
+          "heading": "Photography",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor."
+        },
+        "video": {
+          "heading": "Video",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor."
+        }
+      }
+    },
+    "trustedBy": {
+      "heading": "Trusted by"
+    },
+    "lastProjects": {
+      "badge": "Projects",
+      "heading": "My latest projects"
     }
+  },
+  "footer": {
+    "quickLinks": {
+      "quickLinks": "Quick links",
+      "home": "Home",
+      "about": "About",
+      "projects": "Projects",
+      "contact": "Contact me"
+    },
+    "followMe": "Follow me",
+    "copyright": "All rights reserved"
   }
 }

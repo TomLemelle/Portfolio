@@ -9,8 +9,11 @@ import portfolioProjects from "@/app/data/realisations.js";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { MdArrowForwardIos } from "react-icons/md";
 import Image from "next/image";
+import { useTranslation } from "@/app/contexts/TranslationProvider";
 
 export default function RealisationsHomePage() {
+  const { dictionary, locale } = useTranslation();
+
   const [emblaRef, embla] = useEmblaCarousel({
     loop: true, // Active la boucle
     align: "start", // Aligne les cartes au début
@@ -33,7 +36,7 @@ export default function RealisationsHomePage() {
       <Image
         className="realisations-quadrillage"
         src="/pegboard-2.jpg"
-        alt="Photo de Tom Lemelle"
+        alt="Quadrillage en fond pour l'habillage"
         width={1000} // Valeur arbitraire qui sera réduite avec CSS
         height={1000}
         objectFit="cover"
@@ -47,12 +50,12 @@ export default function RealisationsHomePage() {
       />
       <div className="realisations-homepage-wrapper">
         <TitleContainer
-          badge="Réalisations"
+          badge={dictionary.home.lastProjects.badge}
           isCentered={false}
           icon={<MdArrowForwardIos size={45} />}
           iconLink="/realisations"
         >
-          Mes derniers projets
+          {dictionary.home.lastProjects.heading}
         </TitleContainer>
         <div className="embla" ref={emblaRef}>
           <div className="embla__container">

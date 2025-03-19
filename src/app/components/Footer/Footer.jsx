@@ -3,8 +3,11 @@ import "./Footer.css";
 import { IoIosSettings } from "react-icons/io";
 import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa"; // Ajout des bons icônes
 import { SiMalt } from "react-icons/si";
+import { useTranslation } from "@/app/contexts/TranslationProvider";
 
 export default function Footer() {
+  const { dictionary, locale } = useTranslation();
+
   return (
     <footer className="dark:bg-gray-900">
       <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
@@ -23,32 +26,34 @@ export default function Footer() {
           <div className="grid grid-cols-2 gap-8 sm:gap-14 sm:grid-cols-3">
             <div>
               <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
-                Liens rapides
+                {dictionary.footer.quickLinks.quickLinks}
               </h2>
               <ul className="text-gray-500 dark:text-gray-400 font-medium">
                 <li className="mb-4">
                   <Link href="/" className="hover:underline">
-                    Accueil
+                    {dictionary.footer.quickLinks.home}
                   </Link>
                 </li>
                 <li className="mb-4">
                   <Link href="/about-me" className="hover:underline">
-                    À propos
+                    {dictionary.footer.quickLinks.about}
                   </Link>
                 </li>
                 <li className="mb-4">
                   <Link href="/realisations" className="hover:underline">
-                    Réalisations
+                    {dictionary.footer.quickLinks.projects}
                   </Link>
                 </li>
                 <li>
-                  <div className="hover:underline">Contactez-moi</div>
+                  <div className="hover:underline">
+                    {dictionary.footer.quickLinks.contact}
+                  </div>
                 </li>
               </ul>
             </div>
             <div>
               <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
-                Suivez-moi
+                {dictionary.footer.followMe}
               </h2>
               <ul className="text-gray-500 dark:text-gray-400 font-medium">
                 <li className="mb-4">
@@ -93,8 +98,8 @@ export default function Footer() {
             © 2025{" "}
             <a href="https://flowbite.com/" className="hover:underline">
               Tom Lemelle™
-            </a>
-            . All Rights Reserved.
+            </a>{" "}
+            {dictionary.footer.copyright}
           </span>
           <div className="flex mt-4 sm:justify-center items-center sm:mt-0">
             <a

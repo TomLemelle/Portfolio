@@ -1,8 +1,7 @@
-import { motion } from "framer-motion";
 import { useRef, useState, useEffect } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import "./TrustedBy.css";
-import Image from "next/image";
+import { useTranslation } from "@/app/contexts/TranslationProvider";
 
 const logos = [
   "/logos/SafeEat-logo.png",
@@ -17,6 +16,7 @@ const logos = [
 export default function TrustedBy() {
   const containerRef = useRef(null);
   const [showArrows, setShowArrows] = useState(true);
+  const { dictionary, locale } = useTranslation();
 
   useEffect(() => {
     const checkIfArrowsShouldBeVisible = () => {
@@ -50,7 +50,7 @@ export default function TrustedBy() {
     <section className="trustedby-container">
       <div className="trustedby-wrapper">
         <h2 className="text-[3.75rem] font-semibold max-w-[712px] text-center">
-          Ils m'ont fait confiance
+          {dictionary.home.trustedBy.heading}
         </h2>
         <div className="relative w-full flex items-center justify-center">
           {showArrows && (
