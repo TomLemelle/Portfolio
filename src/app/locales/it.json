@@ -1,4 +1,10 @@
 {
-  "contactMe": "Contattemi",
-  "discover": "Scoprire"
+  "home": {
+    "herobanner": {
+      "contactMe": "Contattemi",
+      "discover": "Scoprire",
+      "description": "Realizzo siti web e li arricchisco con bellissime foto, lavorando come sviluppatore web e fotografo da più di 3 anni.",
+      "projects": "Progetti"
+    }
+  }
 }

@@ -9,22 +9,25 @@ import Link from "next/link";
 import { useTranslation } from "@/app/contexts/TranslationProvider";
 
 export default function Herobanner({ ref, toggleContact = null }) {
-  const { dictionary } = useTranslation();
+  const { dictionary, locale } = useTranslation();
 
-  const hello = ["Développeur", "Photographe", "Vidéaste"];
-  const [currentHello, setCurrentHello] = useState("Développeur");
-
-  const sayHello = () => {
-    let idx = 0;
-    setInterval(() => {
-      idx = (idx + 1) % hello.length;
-      setCurrentHello(hello[idx]);
-    }, 1500);
+  const hello = {
+    fr: ["Développeur", "Photographe", "Vidéaste"],
+    en: ["Developer", "Photographer", "Videographer"],
+    it: ["Sviluppatore", "Fotografo", "Videomaker"],
   };
 
+  const [currentHello, setCurrentHello] = useState(hello[locale][0]);
+
   useEffect(() => {
-    sayHello();
-  }, []);
+    let idx = 0;
+    const interval = setInterval(() => {
+      idx = (idx + 1) % hello[locale].length;
+      setCurrentHello(hello[locale][idx]);
+    }, 1500);
+
+    return () => clearInterval(interval);
+  }, [locale]);
 
   return (
     <header className="header">
@@ -38,24 +41,25 @@ export default function Herobanner({ ref, toggleContact = null }) {
         </li>
         <li>
           <p className="header-description">
-            Je conçois des sites internet et les sublime avec de belles photos,
-            en tant que développeur web et photographe depuis plus de 3 ans
+            {dictionary.home.herobanner.description}
           </p>
         </li>
         <li className="header-btns-container">
           <div className="contact-me" ref={ref} onClick={toggleContact}>
-            {dictionary.contactMe}
+            {dictionary.home.herobanner.contactMe}
           </div>
           <Link href="/realisations">
             <div className="my-works">
-              Réalisations
+              {dictionary.home.herobanner.projects}
               <PiLinkBreakLight className="my-work-icon" size={20} />
             </div>
           </Link>
         </li>
         <li className="discover-mobile">
           <div className="discover-container">
-            <div className="discover-text">{dictionary.discover}</div>
+            <div className="discover-text">
+              {dictionary.home.herobanner.discover}
+            </div>
             <Link href="#services">
               <div className="discover-btn">
                 <div className="arrow-square">
