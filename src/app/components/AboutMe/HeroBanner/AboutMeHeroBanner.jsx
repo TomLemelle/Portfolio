@@ -5,8 +5,11 @@ import Image from "next/image";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { useTranslation } from "@/app/contexts/TranslationProvider";
 
 export default function AboutMeHeroBanner() {
+  const { dictionary, locale } = useTranslation();
+
   const [hoveredIndex, setHoveredIndex] = useState(null);
   const [rect, setRect] = useState({ top: 0, height: 0, width: 0, left: 0 });
   const jobsRef = useRef([]);
@@ -38,16 +41,16 @@ export default function AboutMeHeroBanner() {
 
   const jobs = [
     {
-      label: "Développeur",
-      value: "dev",
+      label: dictionary.about.herobanner.jobs[0].label,
+      value: dictionary.about.herobanner.jobs[0].value,
     },
     {
-      label: "Photographe",
-      value: "photo",
+      label: dictionary.about.herobanner.jobs[1].label,
+      value: dictionary.about.herobanner.jobs[1].value,
     },
     {
-      label: "Vidéaste",
-      value: "video",
+      label: dictionary.about.herobanner.jobs[2].label,
+      value: dictionary.about.herobanner.jobs[2].value,
     },
   ];
 
@@ -105,13 +108,13 @@ export default function AboutMeHeroBanner() {
         </div>
         <div className="header-about-me-realisations-container">
           <p className="header-about-me-realisations-text">
-            Sites vitrines, applications web, webflow, photos et vidéos.
+            {dictionary.about.herobanner.discover.description}
           </p>
           <div
             className="header-about-me-realisations-btn"
             onClick={() => router.push("/realisations")}
           >
-            Découvrir mes réalisations
+            {dictionary.about.herobanner.discover.button}
           </div>
         </div>
         <Link href="#about" className="header-about-me-h1-link">

@@ -37,6 +37,28 @@
       "heading": "My latest projects"
     }
   },
+  "about": {
+    "herobanner": {
+      "jobs": [
+        {
+          "label": "Developer",
+          "value": "dev"
+        },
+        {
+          "label": "Photographer",
+          "value": "photo"
+        },
+        {
+          "label": "Videomaker",
+          "value": "video"
+        }
+      ],
+      "discover": {
+        "description": "Showcase websites, web applications, webflow, photos, and videos.",
+        "button": "Discover my projects"
+      }
+    }
+  },
   "footer": {
     "quickLinks": {
       "quickLinks": "Quick links",

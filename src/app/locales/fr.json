@@ -37,6 +37,28 @@
       "heading": "Mes derniers projets"
     }
   },
+  "about": {
+    "herobanner": {
+      "jobs": [
+        {
+          "label": "Développeur",
+          "value": "dev"
+        },
+        {
+          "label": "Photographe",
+          "value": "photo"
+        },
+        {
+          "label": "Vidéaste",
+          "value": "video"
+        }
+      ],
+      "discover": {
+        "description": "Sites vitrines, applications web, webflow, photos et vidéos.",
+        "button": "Découvrir mes réalisations"
+      }
+    }
+  },
   "footer": {
     "quickLinks": {
       "quickLinks": "Liens rapides",

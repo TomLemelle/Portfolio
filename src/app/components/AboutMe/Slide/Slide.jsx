@@ -3,6 +3,7 @@
 import "./slide.css";
 import "./responsive.css";
 import { motion, AnimatePresence } from "framer-motion";
+import { useTranslation } from "@/app/contexts/TranslationProvider";
 
 export default function Slide({
   title,
@@ -13,10 +14,12 @@ export default function Slide({
   color,
   reverseOrder = false,
 }) {
+  const { locale, dictionary } = useTranslation(); // Récupérer la langue active et les traductions
+
   const chooseRightId = () => {
-    if (title === "Développement Web") {
+    if (title === "Développement Web" || "Web Development" || "Sviluppo Web") {
       return "dev";
-    } else if (title === "Photographie") {
+    } else if (title === "Photographie" || "Photography" || "Fotografia") {
       return "photo";
     } else {
       return "video";
@@ -30,7 +33,7 @@ export default function Slide({
           reverseOrder ? "lg:flex-row-reverse" : "lg:flex-row"
         }`}
       >
-        <div className="w-full lg:w-1/2 flex flex-col justify-center px-6 md:px-12 py-16 md:py-28 bg-gray-100 relative">
+        <div className="w-full lg:w-1/2 flex flex-col justify-center px-6 md:px-12 py-16 md:py-28 bg-bgrey relative">
           <div className="max-w-lg flex flex-col gap-y-6 md:gap-y-8">
             <AnimatePresence mode="wait">
               <motion.div
@@ -42,13 +45,13 @@ export default function Slide({
                 transition={{ duration: 0.5, delay: 0.2 }}
               >
                 {tags &&
-                  tags.map((tags, index) => (
+                  tags.map((tag, index) => (
                     <span
                       key={index}
                       className="inline-block px-3 py-1 md:px-4 md:py-2 text-white font-semibold text-sm md:text-base"
                       style={{ backgroundColor: color }}
                     >
-                      {tags}
+                      {tag}
                     </span>
                   ))}
               </motion.div>
@@ -94,34 +97,6 @@ export default function Slide({
           </AnimatePresence>
         </div>
       </div>
-
-      {entreprises && entreprises.length > 0 && (
-        <div className="w-full bg-gray-200 py-8 flex flex-col gap-y-8">
-          <h2 className="text-3xl md:text-5xl font-bold text-center">
-            Ils m'ont fait confiance
-          </h2>
-          <div className="flex justify-center gap-6 md:gap-12 flex-wrap">
-            {entreprises.map((entreprise, index) => (
-              <motion.div
-                key={index}
-                className="flex items-center justify-center"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: 20 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-              >
-                <motion.img
-                  src={entreprise.logo}
-                  alt={entreprise.name}
-                  className="w-20 h-20 md:w-32 md:h-32 object-contain"
-                  whileHover={{ scale: 1.1 }}
-                  transition={{ duration: 0.3 }}
-                />
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      )}
     </div>
   );
 }

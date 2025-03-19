@@ -9,7 +9,7 @@ export default function Footer() {
   const { dictionary, locale } = useTranslation();
 
   return (
-    <footer className="dark:bg-gray-900">
+    <footer className="bg-bgrey">
       <div className="mx-auto w-[90%] p-4 py-6 lg:py-8">
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">

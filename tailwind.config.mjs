@@ -13,6 +13,7 @@ export default {
         green: "var(--green)",
         purple: "var(--green)",
         blue: "var(--green)",
+        bgrey: "var(--grey-background)",
       },
     },
   },

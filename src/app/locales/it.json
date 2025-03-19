@@ -37,6 +37,28 @@
       "heading": "I miei ultimi progetti"
     }
   },
+  "about": {
+    "herobanner": {
+      "jobs": [
+        {
+          "label": "Sviluppatore",
+          "value": "dev"
+        },
+        {
+          "label": "Fotografo",
+          "value": "photo"
+        },
+        {
+          "label": "Videomaker",
+          "value": "video"
+        }
+      ],
+      "discover": {
+        "description": "Siti vetrina, applicazioni web, webflow, foto e video.",
+        "button": "Scopri i miei progetti"
+      }
+    }
+  },
   "footer": {
     "quickLinks": {
       "quickLinks": "Link rapidi",
