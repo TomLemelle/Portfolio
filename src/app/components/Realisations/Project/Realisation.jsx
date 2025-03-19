@@ -36,17 +36,7 @@ export default function Project({ project }) {
   const handleNavigate = () => {
     if (projectLinked) {
       localStorage.setItem("selectedId", projectLinked.id);
-      router.push(`/realisations/${formatString(projectLinked.title)}`);
-    }
-  };
-
-  const whichColorisIt = () => {
-    if (project.type === dictionary.projects.type.webflow) {
-      return "var(--purple)";
-    } else if (project.type[locale] === dictionary.projects.type.custom) {
-      return "var(--green)";
-    } else {
-      return "var(--blue)";
+      router.push(`/realisations/${formatString(projectLinked.title[locale])}`);
     }
   };
 

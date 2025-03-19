@@ -8,6 +8,7 @@ import { useEffect, useState } from "react";
 import { FaRegWindowClose } from "react-icons/fa";
 import { IoCloseSharp } from "react-icons/io5";
 import Pagination from "@/app/components/Pagination/Pagination";
+import { useTranslation } from "@/app/contexts/TranslationProvider";
 
 const headingColors = {
   "Custom App": "#3b9078",
@@ -16,6 +17,8 @@ const headingColors = {
 };
 
 export default function RealisationsList({ choice, setChoice }) {
+  const { locale } = useTranslation();
+
   const [realisations, setRealisations] = useState([]);
   const [currentRealisations, setCurrentRealisations] = useState([]);
   const [currentPage, setCurrentPage] = useState(1); // État pour suivre la page actuelle
@@ -27,7 +30,7 @@ export default function RealisationsList({ choice, setChoice }) {
       setRealisations(portfolioProjects);
     } else {
       const realisationsFiltered = portfolioProjects.filter(
-        (project) => project.type === choice
+        (project) => project.type[locale] === choice
       );
       setRealisations(realisationsFiltered);
     }

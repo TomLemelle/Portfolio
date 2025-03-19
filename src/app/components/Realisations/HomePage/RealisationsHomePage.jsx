@@ -10,9 +10,11 @@ import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { MdArrowForwardIos } from "react-icons/md";
 import Image from "next/image";
 import { useTranslation } from "@/app/contexts/TranslationProvider";
+import { useRouter } from "next/navigation";
 
 export default function RealisationsHomePage() {
   const { dictionary, locale } = useTranslation();
+  const router = useRouter();
 
   const [emblaRef, embla] = useEmblaCarousel({
     loop: true, // Active la boucle
@@ -52,7 +54,12 @@ export default function RealisationsHomePage() {
         <TitleContainer
           badge={dictionary.home.lastProjects.badge}
           isCentered={false}
-          icon={<MdArrowForwardIos size={45} />}
+          icon={
+            <MdArrowForwardIos
+              size={45}
+              onClick={() => router.push("/realisations")}
+            />
+          }
           iconLink="/realisations"
         >
           {dictionary.home.lastProjects.heading}
