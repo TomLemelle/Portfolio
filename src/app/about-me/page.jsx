@@ -1,12 +1,20 @@
 "use client";
 
 import "./AboutMe.css";
-import Navbar from "../components/Navbar";
 import AboutMeHeroBanner from "../components/AboutMe/HeroBanner/AboutMeHeroBanner";
 import Slide from "../components/AboutMe/Slide/Slide";
-import Footer from "../footer/Footer";
+import ContactButton from "../components/Contact/ContactButton/ContactButton";
+import useContact from "../hooks/useContact";
 
 export default function AboutMe() {
+  const {
+    contactIsOpen,
+    setContactIsOpen,
+    buttonsRefs,
+    toggleModal,
+    modalRef,
+  } = useContact();
+
   const profils = [
     {
       domaine: "Développement Web",
@@ -33,7 +41,6 @@ export default function AboutMe() {
 
   return (
     <>
-      <Navbar />
       <main className="about-me-container">
         <AboutMeHeroBanner />
         {profils.map((profil, idx) => (
@@ -49,7 +56,12 @@ export default function AboutMe() {
           />
         ))}
       </main>
-      <Footer />
+      <ContactButton
+        modalRef={modalRef}
+        closeModal={() => setContactIsOpen(false)}
+        toggleModal={toggleModal}
+        contactIsOpen={contactIsOpen}
+      />
     </>
   );
 }

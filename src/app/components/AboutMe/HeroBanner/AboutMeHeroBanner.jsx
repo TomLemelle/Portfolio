@@ -4,11 +4,13 @@ import { useState, useRef } from "react";
 import Image from "next/image";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 export default function AboutMeHeroBanner() {
   const [hoveredIndex, setHoveredIndex] = useState(null);
   const [rect, setRect] = useState({ top: 0, height: 0, width: 0, left: 0 });
   const jobsRef = useRef([]);
+  const router = useRouter();
 
   // Fonction pour mesurer précisément les dimensions de l'élément
   const updateRectForElement = (element) => {
@@ -105,7 +107,10 @@ export default function AboutMeHeroBanner() {
           <p className="header-about-me-realisations-text">
             Sites vitrines, applications web, webflow, photos et vidéos.
           </p>
-          <div className="header-about-me-realisations-btn" onClick={null}>
+          <div
+            className="header-about-me-realisations-btn"
+            onClick={() => router.push("/realisations")}
+          >
             Découvrir mes réalisations
           </div>
         </div>

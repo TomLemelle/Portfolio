@@ -209,7 +209,18 @@
 }
 
 .right-navbar {
+  position: relative;
   display: flex;
   align-items: center;
   column-gap: 10px;
+}
+
+@media (max-width: 768px) {
+  .right-navbar {
+    order: 1;
+  }
+
+  .burger-menu {
+    order: 2;
+  }
 }

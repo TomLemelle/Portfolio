@@ -1,6 +1,7 @@
 import { Geist, Geist_Mono, Mona_Sans, Abyssinica_SIL } from "next/font/google";
 import "./globals.css";
 import { TranslationProvider } from "./contexts/TranslationProvider";
+import ClientLayout from "./clientLayout";
 
 const monoSans = Mona_Sans({
   variable: "--font-mono-sans",
@@ -25,7 +26,9 @@ export default function RootLayout({ children }) {
       <body
         className={`${monoSans.variable} ${abyssinica.variable} antialiased`}
       >
-        <TranslationProvider>{children}</TranslationProvider>
+        <TranslationProvider>
+          <ClientLayout>{children}</ClientLayout>
+        </TranslationProvider>
       </body>
     </html>
   );

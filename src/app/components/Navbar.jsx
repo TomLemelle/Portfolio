@@ -7,7 +7,7 @@ import { useState } from "react";
 import "./Navbar.css";
 import LanguageSwitcher from "./Translation/LanguageSwitcher";
 
-export default function Navbar({ openContact = null }) {
+export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -55,12 +55,6 @@ export default function Navbar({ openContact = null }) {
 
           <div className="right-navbar">
             <LanguageSwitcher />
-            {/* Bouton Contact */}
-            <div className="contact-desktop" onClick={openContact}>
-              <div className="navbar-contact-container">
-                <div className="navbar-contact">Contact</div>
-              </div>
-            </div>
           </div>
         </div>
       </nav>
@@ -92,11 +86,6 @@ export default function Navbar({ openContact = null }) {
                   <Link href="/realisations" onClick={() => setIsOpen(false)}>
                     Réalisations
                   </Link>
-                </li>
-                <li>
-                  <div className="navbar-contact" onClick={openContact}>
-                    Contact
-                  </div>
                 </li>
               </ul>
             </motion.div>

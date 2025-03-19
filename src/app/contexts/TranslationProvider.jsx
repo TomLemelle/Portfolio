@@ -9,6 +9,24 @@ const translations = { fr, en, it };
 const TranslationContext = createContext();
 
 export function TranslationProvider({ children }) {
+  const flags = [
+    {
+      label: "fr",
+      value: "fr",
+      flag: "🇫🇷",
+    },
+    {
+      label: "en",
+      value: "en",
+      flag: "🇬🇧",
+    },
+    {
+      label: "it",
+      value: "it",
+      flag: "🇮🇹",
+    },
+  ];
+
   const [locale, setLocale] = useState("fr");
   const [dictionary, setDictionary] = useState(translations[locale]);
 
@@ -24,8 +42,14 @@ export function TranslationProvider({ children }) {
     localStorage.setItem("locale", lang);
   };
 
+  const getFlag = () => {
+    return flags.find((l) => l.value === locale).flag;
+  };
+
   return (
-    <TranslationContext.Provider value={{ dictionary, changeLanguage, locale }}>
+    <TranslationContext.Provider
+      value={{ dictionary, changeLanguage, locale, getFlag }}
+    >
       {children}
     </TranslationContext.Provider>
   );

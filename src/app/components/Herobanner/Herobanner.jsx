@@ -8,7 +8,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { useTranslation } from "@/app/contexts/TranslationProvider";
 
-export default function Herobanner() {
+export default function Herobanner({ ref, toggleContact = null }) {
   const { dictionary } = useTranslation();
 
   const hello = ["Développeur", "Photographe", "Vidéaste"];
@@ -43,7 +43,9 @@ export default function Herobanner() {
           </p>
         </li>
         <li className="header-btns-container">
-          <div className="contact-me">{dictionary.contactMe}</div>
+          <div className="contact-me" ref={ref} onClick={toggleContact}>
+            {dictionary.contactMe}
+          </div>
           <Link href="/realisations">
             <div className="my-works">
               Réalisations
@@ -53,7 +55,7 @@ export default function Herobanner() {
         </li>
         <li className="discover-mobile">
           <div className="discover-container">
-            <div className="discover-text">Découvrir</div>
+            <div className="discover-text">{dictionary.discover}</div>
             <Link href="#services">
               <div className="discover-btn">
                 <div className="arrow-square">
@@ -79,7 +81,7 @@ export default function Herobanner() {
       </div>
 
       <div className="discover-container discover-desktop">
-        <div className="discover-text">Découvrir</div>
+        <div className="discover-text">{dictionary.discover}</div>
         <Link href="#services">
           <div className="discover-btn">
             <div className="arrow-square">

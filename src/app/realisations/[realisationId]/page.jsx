@@ -2,15 +2,23 @@
 
 import "./realisationPage.css";
 import { motion, AnimatePresence } from "framer-motion";
-import { use, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import portfolioProjects from "@/app/data/realisations";
-import Navbar from "@/app/components/Navbar";
 import Realisation from "@/app/components/Realisations/Project/Realisation";
-import Footer from "@/app/footer/Footer";
+import ContactButton from "@/app/components/Contact/ContactButton/ContactButton";
+import useContact from "@/app/hooks/useContact";
 
 export default function Page() {
   const [project, setProject] = useState(null);
   const [type, setType] = useState("");
+
+  const {
+    contactIsOpen,
+    setContactIsOpen,
+    buttonsRefs,
+    toggleModal,
+    modalRef,
+  } = useContact();
 
   useEffect(() => {
     if (project) {
@@ -46,7 +54,6 @@ export default function Page() {
 
   return (
     <>
-      <Navbar />
       <main className="project-container">
         {project && (
           <div className="flex flex-col justify-center items-center gap-y-12 w-full">
@@ -79,7 +86,12 @@ export default function Page() {
           </div>
         )}
       </main>
-      <Footer />
+      <ContactButton
+        modalRef={modalRef}
+        closeModal={() => setContactIsOpen(false)}
+        toggleModal={toggleModal}
+        contactIsOpen={contactIsOpen}
+      />
     </>
   );
 }
