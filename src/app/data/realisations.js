@@ -32,13 +32,21 @@ const portfolioProjects = [
     ],
     linked: null,
     color: "#3b9078",
-    date: "Novembre 2023 - Actuellement",
+    date: {
+      fr: "Novembre 2023 - Actuellement",
+      en: "November 2023 - Currently",
+      it: "Novembre 2023 - Attualmente",
+    },
     domain: {
       fr: "Startup healthtech",
       en: "Healthtech Startup",
       it: "Startup Healthtech",
     },
-    type: "Custom App",
+    type: {
+      fr: "Application sur mesure",
+      en: "Custom App",
+      it: "App Personalizzata",
+    },
     technologies: [
       {
         name: "React",
@@ -102,13 +110,21 @@ const portfolioProjects = [
     ],
     linked: 3, // Lien vers le projet de photographie
     color: "#853b90",
-    date: "Janvier 2025",
+    date: {
+      fr: "Janvier 2025",
+      en: "January 2025",
+      it: "Gennaio 2025",
+    },
     domain: {
       fr: "Dentiste",
       en: "Dentist",
       it: "Dentista",
     },
-    type: "Webflow",
+    type: {
+      fr: "Webflow",
+      en: "Webflow",
+      it: "Webflow",
+    },
     technologies: [
       {
         name: "Webflow",
@@ -149,13 +165,21 @@ const portfolioProjects = [
     ],
     linked: 2, // Lien vers le projet de site Webflow
     color: "#3b4990",
-    date: "Janvier 2025",
+    date: {
+      fr: "Janvier 2025",
+      en: "January 2025",
+      it: "Gennaio 2025",
+    },
     domain: {
       fr: "Dentiste",
       en: "Dentist",
       it: "Dentista",
     },
-    type: "Photos / Vidéos",
+    type: {
+      fr: "Photographie / Vidéos",
+      en: "Photography / Videos",
+      it: "Fotografia / Video",
+    },
     technologies: [
       {
         name: "Adobe Lightroom Classic",

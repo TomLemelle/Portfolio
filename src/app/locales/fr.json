@@ -59,6 +59,15 @@
       }
     }
   },
+  "projects": {
+    "type": {
+      "custom": "Application sur mesure",
+      "webflow": "Webflow",
+      "photo": "Photographie / Vidéos"
+    },
+    "noImage": "Aucune image disponible",
+    "noProject": "Cette réalisation n'est pas disponible ou n'existe pas."
+  },
   "footer": {
     "quickLinks": {
       "quickLinks": "Liens rapides",

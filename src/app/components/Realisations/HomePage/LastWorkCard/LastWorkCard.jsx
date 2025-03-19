@@ -4,6 +4,7 @@ import { useRouter } from "next/navigation";
 import "./LastWorkCard.css";
 import Image from "next/image";
 import formatString from "@/app/utils/formatSlug";
+import { useTranslation } from "@/app/contexts/TranslationProvider";
 
 export default function LastWorkCard({
   title,
@@ -15,8 +16,14 @@ export default function LastWorkCard({
   color,
 }) {
   const router = useRouter();
+  const { locale } = useTranslation();
 
-  const slug = formatString(title);
+  // Traduction dynamique
+  const translatedTitle = title[locale];
+  const translatedSubheading = subheading[locale];
+  const translatedDescription = description ? description[locale] : "";
+
+  const slug = formatString(translatedTitle);
 
   const handleNavigate = () => {
     const storedId = localStorage.getItem("selectedId");
@@ -40,10 +47,10 @@ export default function LastWorkCard({
           className="thumbnail-image"
           width={color === "#3b4990" ? 264 : 313}
           height={color === "#3b4990" ? 264 : 265}
-          alt={`Thumbnail du projet ${title}`}
+          alt={`Thumbnail du projet ${translatedTitle}`}
         />
-        <h3 className="last-work-title">{title}</h3>
-        <p className="last-work-subheading">{subheading}</p>
+        <h3 className="last-work-title">{translatedTitle}</h3>
+        <p className="last-work-subheading">{translatedSubheading}</p>
       </div>
     </div>
   );

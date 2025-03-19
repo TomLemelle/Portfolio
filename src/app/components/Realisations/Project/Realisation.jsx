@@ -3,11 +3,14 @@ import { useEffect, useState } from "react";
 import portfolioProjects from "@/app/data/realisations.js";
 import formatString from "@/app/utils/formatSlug";
 import { useRouter } from "next/navigation";
+import { useTranslation } from "@/app/contexts/TranslationProvider";
 
 export default function Project({ project }) {
   const router = useRouter();
   const [projectLinked, setProjectLinked] = useState(null);
   const [index, setIndex] = useState(0);
+
+  const { dictionary, locale } = useTranslation();
 
   useEffect(() => {
     if (project && project.photos) {
@@ -38,15 +41,48 @@ export default function Project({ project }) {
   };
 
   const whichColorisIt = () => {
-    if (project.type === "Webflow") {
+    if (project.type === dictionary.projects.type.webflow) {
       return "var(--purple)";
-    } else if (project.type === "Custom App") {
+    } else if (project.type[locale] === dictionary.projects.type.custom) {
       return "var(--green)";
     } else {
       return "var(--blue)";
     }
   };
 
+  const discoverProjectLinkedTranslations = {
+    fr: {
+      discoverSite: "Découvrir la présentation du site web",
+      exploreVisuals: "Explorer les visuels du cabinet",
+    },
+    en: {
+      discoverSite: "Discover the website presentation",
+      exploreVisuals: "Explore the practice visuals",
+    },
+    it: {
+      discoverSite: "Scopri la presentazione del sito web",
+      exploreVisuals: "Esplora i visual del cabinet",
+    },
+  };
+
+  const getProjectLinkedTranslated = () => {
+    if (
+      projectLinked.type[locale] === dictionary.projects.type.webflow ||
+      projectLinked.type[locale] === dictionary.projects.type.custom
+    ) {
+      return discoverProjectLinkedTranslations[locale].discoverSite;
+    } else if (
+      projectLinked.type[locale] === dictionary.projects.type.photography
+    ) {
+      return discoverProjectLinkedTranslations[locale].exploreVisuals;
+    } else {
+      return discoverProjectLinkedTranslations[locale].exploreVisuals;
+    }
+  };
+
+  const translatedType = project.type[locale];
+  const translatedDate = project.date[locale];
+  const translatedTitle = project.title[locale];
   return (
     <div className="relative flex h-screen w-full border-[8px]">
       {project && Object.entries(project).length !== 0 ? (
@@ -68,7 +104,7 @@ export default function Project({ project }) {
                   exit={{ opacity: 0, x: 20 }}
                   transition={{ duration: 0.6 }}
                 >
-                  {project.type + " - " + project.date}
+                  {translatedType + " - " + translatedDate}
                 </motion.span>
                 <motion.h2
                   key={project.title}
@@ -78,7 +114,7 @@ export default function Project({ project }) {
                   exit={{ opacity: 0, x: 20 }}
                   transition={{ duration: 0.6, delay: 0.2 }}
                 >
-                  {project.title}
+                  {translatedTitle}
                 </motion.h2>
 
                 {project.texts.map((textObj, idx) => (
@@ -90,7 +126,7 @@ export default function Project({ project }) {
                     exit={{ opacity: 0, x: 20 }}
                     transition={{ duration: 0.6, delay: 0.4 + idx * 0.4 }} // Décalage après le h1
                   >
-                    {textObj.text}
+                    {textObj.text[locale]}
                   </motion.p>
                 ))}
               </AnimatePresence>
@@ -109,10 +145,7 @@ export default function Project({ project }) {
                     }}
                     onClick={handleNavigate}
                   >
-                    {projectLinked.type === "Webflow" ||
-                    projectLinked.type === "Custom App"
-                      ? "Découvrir la présentation du site web"
-                      : "Explorer les visuels du cabinet"}
+                    {getProjectLinkedTranslated()}
                   </motion.div>
                 </AnimatePresence>
               )}
@@ -139,7 +172,7 @@ export default function Project({ project }) {
                 />
               </AnimatePresence>
             ) : (
-              <p>Aucune image disponible</p>
+              <p>{dictionary.projects.noImage}</p>
             )}
             <button
               onClick={nextSlide}
@@ -150,7 +183,7 @@ export default function Project({ project }) {
           </div>
         </>
       ) : (
-        <div>Cette réalisation n'est pas disponible ou n'existe pas.</div>
+        <div>{dictionary.projects.noProject}</div>
       )}
     </div>
   );

@@ -59,6 +59,15 @@
       }
     }
   },
+  "projects": {
+    "type": {
+      "custom": "App Personalizzata",
+      "webflow": "Webflow",
+      "photo": "Fotografia / Video"
+    },
+    "noImage": "Nessuna immagine disponibile",
+    "noProject": "Questo progetto non è disponibile o non esiste."
+  },
   "footer": {
     "quickLinks": {
       "quickLinks": "Link rapidi",

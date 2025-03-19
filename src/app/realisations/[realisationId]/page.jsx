@@ -7,6 +7,7 @@ import portfolioProjects from "@/app/data/realisations";
 import Realisation from "@/app/components/Realisations/Project/Realisation";
 import ContactButton from "@/app/components/Contact/ContactButton/ContactButton";
 import useContact from "@/app/hooks/useContact";
+import { useTranslation } from "@/app/contexts/TranslationProvider"; // Assuming you have this
 
 export default function Page() {
   const [project, setProject] = useState(null);
@@ -19,6 +20,7 @@ export default function Page() {
     toggleModal,
     modalRef,
   } = useContact();
+  const { locale } = useTranslation(); // Assuming this is how you get the current locale
 
   useEffect(() => {
     if (project) {
@@ -34,6 +36,7 @@ export default function Page() {
     if (selectedProject) {
       setProject(selectedProject);
     }
+    console.log(selectedProject);
   }, []);
 
   const checkType = () => {
@@ -49,6 +52,8 @@ export default function Page() {
           `Réalisation de visuels professionnels pour ${project.company}`
         );
         break;
+      default:
+        setType(`Réalisation pour ${project.company}`);
     }
   };
 
@@ -59,14 +64,15 @@ export default function Page() {
           <div className="flex flex-col justify-center items-center gap-y-12 w-full">
             <AnimatePresence mode="wait">
               <motion.h1
-                key={project.title}
+                key={project.title[locale]} // Access title based on current locale
                 className="text-5xl font-bold"
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
                 exit={{ opacity: 0, x: 20 }}
                 transition={{ duration: 0.5 }}
               >
-                {type}
+                {project.title[locale]}
+                {/* Correctly access the title in the current locale */}
               </motion.h1>
               <div className="flex justify-center items-center space-x-4">
                 {project.technologies.map((technology, idx) => (
@@ -75,7 +81,11 @@ export default function Page() {
                     key={idx}
                     style={{ backgroundColor: project.color }}
                   >
-                    <a href={technology.url} target="_blank">
+                    <a
+                      href={technology.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       {technology.name}
                     </a>
                   </div>
