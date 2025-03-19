@@ -5,7 +5,7 @@ import { useTranslation } from "@/app/contexts/TranslationProvider";
 
 const logos = [
   "/logos/SafeEat-logo.png",
-  "/logos/Citizens-logo.png",
+  "/logos/citizens-logo.png",
   "/logos/PICTION-logo.png",
   "/logos/ComptoirdeMathilde-logo.png",
   "/logos/ADLCabinet-logo.png",
