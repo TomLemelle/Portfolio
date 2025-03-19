@@ -59,6 +59,15 @@
       }
     }
   },
+  "realisations": {
+    "heading": "All My Project",
+    "description": "Development of apps, dynamic Webflow sites, striking images in photography and video – each project is designed to adapt to your universe. Creative, technical, and precise, I bring unique projects to life.",
+    "buttons": {
+      "custom": "Custom App",
+      "webflow": "Webflow",
+      "photo": "Photos / Videos"
+    }
+  },
   "projects": {
     "type": {
       "custom": "Custom App",

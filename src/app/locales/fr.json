@@ -59,6 +59,15 @@
       }
     }
   },
+  "realisations": {
+    "heading": "Toutes mes réalisations",
+    "description": "Développement d’apps, sites Webflow dynamiques, images percutantes en photo et vidéo – chaque projet est pensé pour s’adapter à ton univers. Créatif, technique et précis, je donne vie à des projets uniques.",
+    "buttons": {
+      "custom": "Application sur mesure",
+      "webflow": "Webflow",
+      "photo": "Photographie / Vidéos"
+    }
+  },
   "projects": {
     "type": {
       "custom": "Application sur mesure",

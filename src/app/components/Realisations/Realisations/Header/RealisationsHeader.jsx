@@ -3,19 +3,20 @@
 import Image from "next/image";
 import "./RealisationsHeader.css";
 import "./responsive.css";
+import { useTranslation } from "@/app/contexts/TranslationProvider";
 
 export default function RealisationsHeader({ choice, setChoice }) {
+  const { dictionary, locale } = useTranslation();
+
   const handleChoice = (value) => {
     setChoice(value);
   };
 
   return (
     <header className="realisations-title-container">
-      <h1 className="realisations-title">Toutes mes réalisations</h1>
+      <h1 className="realisations-title">{dictionary.realisations.heading}</h1>
       <p className="realisations-description">
-        Développement d’apps, sites Webflow dynamiques, images percutantes en
-        photo et vidéo – chaque projet est pensé pour s’adapter à ton univers.
-        Créatif, technique et précis, je donne vie à des projets uniques.
+        {dictionary.realisations.description}
       </p>
       <div className="domains-container">
         <Image
@@ -32,14 +33,23 @@ export default function RealisationsHeader({ choice, setChoice }) {
           alt="Arrow design"
           className="arrow-domain"
         />
-        <div className="domain" onClick={() => handleChoice("Custom App")}>
-          Custom App
+        <div
+          className="domain"
+          onClick={() => handleChoice(dictionary.realisations.buttons.custom)}
+        >
+          {dictionary.realisations.buttons.custom}
         </div>
-        <div className="domain" onClick={() => handleChoice("Webflow")}>
-          Webflow
+        <div
+          className="domain"
+          onClick={() => handleChoice(dictionary.realisations.buttons.webflow)}
+        >
+          {dictionary.realisations.buttons.webflow}
         </div>
-        <div className="domain" onClick={() => handleChoice("Photos / Vidéos")}>
-          Photos / Vidéos
+        <div
+          className="domain"
+          onClick={() => handleChoice(dictionary.realisations.buttons.photo)}
+        >
+          {dictionary.realisations.buttons.photo}
         </div>
       </div>
     </header>

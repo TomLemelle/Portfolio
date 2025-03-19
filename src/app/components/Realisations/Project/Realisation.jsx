@@ -91,14 +91,14 @@ export default function Project({ project }) {
 
           <div
             className="w-1/2 flex flex-col justify-center px-12 relative border-r-[8px] border-green"
-            style={{ borderColor: whichColorisIt() }}
+            style={{ borderColor: project.color }}
           >
             <div className="max-w-lg flex flex-col justify-center gap-y-12">
               <AnimatePresence mode="wait">
                 <motion.span
                   key={project.id}
                   className="text-lg font-regular text-xl font-medium leading-none"
-                  style={{ color: whichColorisIt() }}
+                  style={{ color: project.color }}
                   initial={{ opacity: 0, x: -20 }}
                   animate={{ opacity: 1, x: 0 }}
                   exit={{ opacity: 0, x: 20 }}
@@ -141,7 +141,7 @@ export default function Project({ project }) {
                     transition={{ duration: 0.6 }}
                     className="cursor-pointer hover:underline"
                     style={{
-                      color: whichColorisIt(),
+                      color: project.color,
                     }}
                     onClick={handleNavigate}
                   >

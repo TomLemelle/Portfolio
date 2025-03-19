@@ -59,6 +59,15 @@
       }
     }
   },
+  "realisations": {
+    "heading": "Tutti i miei progetti",
+    "description": "Sviluppo di app, siti Webflow dinamici, immagini impattanti in fotografia e video – ogni progetto è pensato per adattarsi al tuo universo. Creativo, tecnico e preciso, do vita a progetti unici.",
+    "buttons": {
+      "custom": "App personalizzata",
+      "webflow": "Webflow",
+      "photo": "Foto / Video"
+    }
+  },
   "projects": {
     "type": {
       "custom": "App Personalizzata",
