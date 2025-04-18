@@ -33,7 +33,8 @@
 }
 
 .embla__slide {
-  flex: 0 0 450px; /* Largeur d'une carte */
+  flex: 0 0 100%;
+  max-width: 450px;
   position: relative;
 }
 

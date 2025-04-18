@@ -42,13 +42,15 @@ export default function LastWorkCard({
         className="last-work-card-wrapper"
         style={{ backgroundColor: color }}
       >
-        <Image
-          src={`/${thumbnail}`}
-          className="thumbnail-image"
-          width={color === "#3b4990" ? 264 : 313}
-          height={color === "#3b4990" ? 264 : 265}
-          alt={`Thumbnail du projet ${translatedTitle}`}
-        />
+        <div className="last-work-card-img-wrapper">
+          <Image
+            src={`/${thumbnail}`}
+            height={264}
+            width={264}
+            className="thumbnail-image"
+            alt={`Thumbnail du projet ${translatedTitle}`}
+          />
+        </div>
         <h3 className="last-work-title">{translatedTitle}</h3>
         <p className="last-work-subheading">{translatedSubheading}</p>
       </div>

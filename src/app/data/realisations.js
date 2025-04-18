@@ -99,13 +99,13 @@ const portfolioProjects = [
       en: "Webflow Website for a Dental Practice.",
       it: "Sito Webflow per uno studio dentistico.",
     },
-    thumbnail: "adl-cabinet-website-thumbnail.png",
+    thumbnail: "realisations/adl-cabinet-website-thumbnail.png",
     photos: [
       {
-        photo: "realisation-project-adlcabinet.png",
+        photo: "realisations/realisation-project-adlcabinet.png",
       },
       {
-        photo: "adl-cabinet-website-thumbnail.png",
+        photo: "realisations/adl-cabinet-website-thumbnail.png",
       },
     ],
     linked: 3, // Lien vers le projet de photographie
@@ -154,13 +154,13 @@ const portfolioProjects = [
       en: "Professional Photography for a Dental Practice.",
       it: "Fotografia professionale per uno studio dentistico.",
     },
-    thumbnail: "adl-cabinet-photos-thumbnail.png",
+    thumbnail: "realisations/adl-cabinet-photos-thumbnail.png",
     photos: [
       {
-        photo: "realisation-project-adlcabinet.png",
+        photo: "realisations/realisation-project-adlcabinet.png",
       },
       {
-        photo: "adl-cabinet-website-thumbnail.png",
+        photo: "realisations/adl-cabinet-website-thumbnail.png",
       },
     ],
     linked: 2, // Lien vers le projet de site Webflow
@@ -184,6 +184,74 @@ const portfolioProjects = [
       {
         name: "Adobe Lightroom Classic",
         url: "https://www.adobe.com/fr/products/photoshop-lightroom-classic.html",
+      },
+    ],
+  },
+  {
+    id: 4,
+    title: {
+      fr: "MimeTime - Jeu mobile",
+      en: "MimeTime - Mobile Game",
+      it: "MimeTime - Gioco Mobile",
+    },
+    company: "Projet personnel",
+    texts: [
+      {
+        text: {
+          fr: "MimeTime est un jeu de mime au tour par tour que j’ai conçu et développé seul. Accessible à l’adresse https://mime-time.vercel.app/ (idéalement sur mobile), le jeu permet aux joueurs de s’affronter en mimant des mots, de passer une question, d’attribuer des points, de suivre les scores via un tableau, et de voir le podium en fin de partie. On peut aussi configurer les règles : nombre de joueurs, points à atteindre, durée d’un tour, etc. Ce projet m’a permis de progresser en React, Vite, et Figma pour le design, que j’ai aussi entièrement réalisé moi-même. Il est hébergé sur GitHub et déployé avec Vercel.",
+          en: "MimeTime is a turn-based mime game that I designed and developed solo. It’s available at https://mime-time.vercel.app/ (best played on mobile). Players can mime words, skip questions, assign points to winners, and check the live scoreboard and final podium. The game settings—number of players, points, time per round—are all configurable. This project helped me improve my skills in React, Vite, and Figma (which I used to design the interface). It’s hosted on GitHub and deployed via Vercel.",
+          it: "MimeTime è un gioco di mimi a turni che ho progettato e sviluppato da solo. È disponibile su https://mime-time.vercel.app/ (consigliato su mobile). I giocatori possono mimare parole, saltare una domanda, assegnare punti ai vincitori e consultare la classifica e il podio finale. Si possono configurare le regole del gioco: numero di giocatori, punti da raggiungere, tempo per turno, ecc. Questo progetto mi ha permesso di migliorare in React, Vite e Figma, che ho usato per realizzare tutto il design. È ospitato su GitHub e distribuito con Vercel.",
+        },
+      },
+    ],
+    subheading: {
+      fr: "Jeu de mime au tour par tour, responsive mobile.",
+      en: "Turn-based mime game, mobile responsive.",
+      it: "Gioco di mimi a turni, ottimizzato per mobile.",
+    },
+    thumbnail: "realisations/mime-time-thumbnail.png",
+    photos: [
+      {
+        photo: "realisations/mime-time-thumbnail.png",
+      },
+    ],
+    linked: null,
+    color: "#fca311", // Feel free to change, c'est juste un exemple !
+    date: {
+      fr: "Mars 2025",
+      en: "March 2025",
+      it: "Marzo 2025",
+    },
+    domain: {
+      fr: "Jeu mobile",
+      en: "Mobile Game",
+      it: "Gioco Mobile",
+    },
+    type: {
+      fr: "Projet personnel",
+      en: "Personal Project",
+      it: "Progetto Personale",
+    },
+    technologies: [
+      {
+        name: "React",
+        url: "https://react.dev",
+      },
+      {
+        name: "Vite",
+        url: "https://vitejs.dev/",
+      },
+      {
+        name: "Figma",
+        url: "https://www.figma.com/",
+      },
+      {
+        name: "Vercel",
+        url: "https://vercel.com/",
+      },
+      {
+        name: "GitHub",
+        url: "https://github.com/",
       },
     ],
   },
