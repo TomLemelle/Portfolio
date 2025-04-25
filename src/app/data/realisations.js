@@ -21,13 +21,10 @@ const portfolioProjects = [
       en: "Platform for allergen management in restaurants.",
       it: "Piattaforma per la gestione degli allergeni nei ristoranti.",
     },
-    thumbnail: "safeeat-thumbnail.png",
+    thumbnail: "realisations/safeeat-thumbnail.png",
     photos: [
       {
-        photo: "realisation-project-adlcabinet.png",
-      },
-      {
-        photo: "adl-cabinet-website-thumbnail.png",
+        photo: "realisations/safeeat-thumbnail.png",
       },
     ],
     linked: null,
@@ -99,13 +96,22 @@ const portfolioProjects = [
       en: "Webflow Website for a Dental Practice.",
       it: "Sito Webflow per uno studio dentistico.",
     },
-    thumbnail: "realisations/adl-cabinet-website-thumbnail.png",
+    thumbnail: "realisations/adl-cabinet-website-thumbnail.jpg",
     photos: [
       {
-        photo: "realisations/realisation-project-adlcabinet.png",
+        photo: "realisations/adl-cabinet-website-thumbnail.jpg",
       },
       {
-        photo: "realisations/adl-cabinet-website-thumbnail.png",
+        photo: "realisations/realisation-project-adlcabinet-2.jpg",
+      },
+      {
+        photo: "realisations/realisation-project-adlcabinet-3.jpg",
+      },
+      {
+        photo: "realisations/realisation-project-adlcabinet-4.jpg",
+      },
+      {
+        photo: "realisations/realisation-project-adlcabinet-5.jpg",
       },
     ],
     linked: 3, // Lien vers le projet de photographie
@@ -157,10 +163,28 @@ const portfolioProjects = [
     thumbnail: "realisations/adl-cabinet-photos-thumbnail.png",
     photos: [
       {
-        photo: "realisations/realisation-project-adlcabinet.png",
+        photo: "realisations/adlcabinet-photos-1.jpg",
       },
       {
-        photo: "realisations/adl-cabinet-website-thumbnail.png",
+        photo: "realisations/adlcabinet-photos-2.jpg",
+      },
+      {
+        photo: "realisations/adlcabinet-photos-3.jpg",
+      },
+      {
+        photo: "realisations/adlcabinet-photos-4.jpg",
+      },
+      {
+        photo: "realisations/adlcabinet-photos-5.jpg",
+      },
+      {
+        photo: "realisations/adlcabinet-photos-6.jpg",
+      },
+      {
+        photo: "realisations/adlcabinet-photos-7.jpg",
+      },
+      {
+        photo: "realisations/adlcabinet-photos-8.jpg",
       },
     ],
     linked: 2, // Lien vers le projet de site Webflow
@@ -277,10 +301,10 @@ const portfolioProjects = [
       en: "Visual elimination game on a Halloween theme.",
       it: "Gioco a eliminazione visiva con tema Halloween.",
     },
-    thumbnail: "realisations/thisorthat-thumbnail.png",
+    thumbnail: "realisations/thisorthat-thumbnail.jpg",
     photos: [
       {
-        photo: "realisations/thisorthat-thumbnail.png",
+        photo: "realisations/thisorthat-thumbnail.jpg",
       },
     ],
     linked: null,

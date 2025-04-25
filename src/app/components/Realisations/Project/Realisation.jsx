@@ -48,6 +48,8 @@ export default function Project({ project }) {
   const { dictionary, locale } = useTranslation();
 
   useEffect(() => {
+    console.log(project);
+
     if (!project.photos || project.photos.length === 0) return;
 
     const timer = setTimeout(() => {
@@ -191,7 +193,7 @@ export default function Project({ project }) {
       </div>
 
       {/* Images + Carousel */}
-      <div className="w-full lg:w-1/2 relative flex flex-col items-center justify-center overflow-hidden h-[60vh] lg:h-auto px-4">
+      <div className="w-full lg:w-1/2 relative flex flex-col items-center justify-center overflow-hidden h-[60vh] lg:h-auto">
         <button
           onClick={prevSlide}
           className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-4 z-20 shadow-lg hover:bg-gray-700 transition rounded"
