@@ -32,7 +32,7 @@ export default function AboutMe() {
             image={"/accordion-1.png"}
             entreprises={profil.entreprises}
             color={profil.color}
-            reverseOrder={idx % 2 !== 0}
+            isLast={idx === profils.length - 1}
           />
         ))}
       </main>

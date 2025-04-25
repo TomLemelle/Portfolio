@@ -11,9 +11,9 @@ export const profils = [
       it: "Appassionato di tecnologia sin da giovane, sono uno sviluppatore web da 5 anni. Esperto in React, Next.js, Vue.js e AdonisJS, ho acquisito una solida esperienza tecnica. Il mio percorso imprenditoriale con SafeEat e Citizens mi ha permesso di perfezionare le mie competenze nella creazione di soluzioni innovative.",
     },
     tags: {
-      fr: ["React", "Next.js", "Vue.js", "AdonisJS"],
-      en: ["React", "Next.js", "Vue.js", "AdonisJS"],
-      it: ["React", "Next.js", "Vue.js", "AdonisJS"],
+      fr: ["React", "Next.js", "Vue.js", "AdonisJS", "Docker", "Git"],
+      en: ["React", "Next.js", "Vue.js", "AdonisJS", "Docker", "Git"],
+      it: ["React", "Next.js", "Vue.js", "AdonisJS", "Docker", "Git"],
     },
     color: "#3b9078",
   },
@@ -30,7 +30,7 @@ export const profils = [
     },
     tags: {
       fr: ["Portrait", "Entreprise"],
-      en: ["Portrait", "Business"],
+      en: ["Portrait", "Company"],
       it: ["Ritratto", "Azienda"],
     },
     color: "#3b4990",

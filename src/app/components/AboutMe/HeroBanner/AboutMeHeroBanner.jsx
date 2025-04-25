@@ -117,7 +117,7 @@ export default function AboutMeHeroBanner() {
             {dictionary.about.herobanner.discover.button}
           </div>
         </div>
-        <Link href="#about" className="header-about-me-h1-link">
+        <Link href="#dev" className="header-about-me-h1-link">
           <div className="header-about-me-h1-container">
             <MdOutlineKeyboardArrowDown
               size={120}

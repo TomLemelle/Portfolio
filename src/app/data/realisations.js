@@ -255,6 +255,74 @@ const portfolioProjects = [
       },
     ],
   },
+  {
+    id: 5,
+    title: {
+      fr: "You Prefer This or That - Jeu Halloween",
+      en: "You Prefer This or That - Halloween Game",
+      it: "You Prefer This or That - Gioco di Halloween",
+    },
+    company: "Projet personnel",
+    texts: [
+      {
+        text: {
+          fr: "You Prefer This or That est un petit jeu que j’ai imaginé et réalisé seul, sur le thème d’Halloween. Le principe est simple et inspiré du contenu de Kombini : on choisit entre deux personnages à chaque tour. Celui qui est sélectionné continue la partie, tandis que l’autre est éliminé. Ce processus se répète jusqu’à la sélection d’un unique gagnant. Pendant la partie, on peut voir un aperçu de ses choix précédents, et un récapitulatif final affiche tous les résultats et le personnage vainqueur. Ce projet m’a permis de m’améliorer sur React, Vite, ainsi que sur la conception d’interfaces avec Figma. Il est hébergé sur GitHub et déployé via Vercel. Il est accessible ici : https://you-prefer-this-or-that.vercel.app/",
+          en: "You Prefer This or That is a small game I designed and built myself, with a Halloween theme. The concept, inspired by Kombini videos, is simple: choose between two characters. The chosen one continues, and the other is eliminated. This continues until there’s a single winner. During the game, players can view a summary of their past choices, and a full recap is shown at the end along with the winning character. This project helped me improve my skills in React, Vite, and Figma for UI design. It’s hosted on GitHub, deployed with Vercel, and accessible here: https://you-prefer-this-or-that.vercel.app/",
+          it: "You Prefer This or That è un piccolo gioco che ho ideato e sviluppato da solo, con un tema di Halloween. Il concetto, ispirato ai video di Kombini, è semplice: si sceglie tra due personaggi. Quello scelto continua il gioco, l'altro viene eliminato. Si procede così fino a determinare un unico vincitore. Durante la partita è possibile visualizzare un riepilogo delle scelte effettuate, e alla fine viene mostrato un resoconto completo con il personaggio vincente. Questo progetto mi ha aiutato a migliorare con React, Vite e Figma per il design dell'interfaccia. È ospitato su GitHub, distribuito con Vercel e accessibile qui: https://you-prefer-this-or-that.vercel.app/",
+        },
+      },
+    ],
+    subheading: {
+      fr: "Jeu de choix visuel à élimination sur le thème d’Halloween.",
+      en: "Visual elimination game on a Halloween theme.",
+      it: "Gioco a eliminazione visiva con tema Halloween.",
+    },
+    thumbnail: "realisations/thisorthat-thumbnail.png",
+    photos: [
+      {
+        photo: "realisations/thisorthat-thumbnail.png",
+      },
+    ],
+    linked: null,
+    color: "#fca311",
+    date: {
+      fr: "Octobre 2024",
+      en: "October 2024",
+      it: "Ottobre 2024",
+    },
+    domain: {
+      fr: "Jeu Web",
+      en: "Web Game",
+      it: "Gioco Web",
+    },
+    type: {
+      fr: "Projet personnel",
+      en: "Personal Project",
+      it: "Progetto Personale",
+    },
+    technologies: [
+      {
+        name: "React",
+        url: "https://react.dev",
+      },
+      {
+        name: "Vite",
+        url: "https://vitejs.dev/",
+      },
+      {
+        name: "Figma",
+        url: "https://www.figma.com/",
+      },
+      {
+        name: "Vercel",
+        url: "https://vercel.com/",
+      },
+      {
+        name: "GitHub",
+        url: "https://github.com/",
+      },
+    ],
+  },
 ];
 
 export default portfolioProjects;

@@ -45,8 +45,8 @@ export default function LastWorkCard({
         <div className="last-work-card-img-wrapper">
           <Image
             src={`/${thumbnail}`}
-            height={264}
-            width={264}
+            height={300}
+            width={300}
             className="thumbnail-image"
             alt={`Thumbnail du projet ${translatedTitle}`}
           />
