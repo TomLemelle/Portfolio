@@ -65,7 +65,7 @@ export default function Page() {
             <AnimatePresence mode="wait">
               <motion.h1
                 key={project.title[locale]} // Access title based on current locale
-                className="text-5xl font-bold"
+                className="text-5xl font-bold text-center"
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
                 exit={{ opacity: 0, x: 20 }}

@@ -48,8 +48,6 @@ export default function Project({ project }) {
   const { dictionary, locale } = useTranslation();
 
   useEffect(() => {
-    console.log(project);
-
     if (!project.photos || project.photos.length === 0) return;
 
     const timer = setTimeout(() => {
@@ -104,10 +102,6 @@ export default function Project({ project }) {
       projectLinked.type[locale] === dictionary.projects.type.custom
     ) {
       return discoverProjectLinkedTranslations[locale].discoverSite;
-    } else if (
-      projectLinked.type[locale] === dictionary.projects.type.photography
-    ) {
-      return discoverProjectLinkedTranslations[locale].exploreVisuals;
     } else {
       return discoverProjectLinkedTranslations[locale].exploreVisuals;
     }
@@ -119,7 +113,7 @@ export default function Project({ project }) {
 
   return (
     <div
-      className="relative flex flex-col-reverse lg:flex-row h-screen w-full lg:border-[8px] border-transparent"
+      className="relative flex flex-col-reverse lg:flex-row w-full h-auto lg:h-screen lg:border-[8px]"
       style={{ borderColor: project.color }}
     >
       {/* Texte */}
@@ -127,7 +121,7 @@ export default function Project({ project }) {
         className="w-full lg:w-1/2 flex flex-col justify-center px-8 lg:px-12 relative border-r-0 lg:border-r-[8px]"
         style={{ borderColor: project.color }}
       >
-        {/* Barre séparatrice verticale desktop uniquement */}
+        {/* Barre verticale desktop uniquement */}
         <div
           className="hidden lg:block absolute top-0 bottom-0 right-0 w-[4px]"
           style={{ backgroundColor: project.color }}
@@ -137,7 +131,7 @@ export default function Project({ project }) {
           <AnimatePresence mode="wait">
             <motion.span
               key={project.id}
-              className="text-lg font-regular text-xl font-medium leading-none"
+              className="text-lg font-medium leading-none"
               style={{ color: project.color }}
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
@@ -160,7 +154,7 @@ export default function Project({ project }) {
             {project.texts.map((textObj, idx) => (
               <motion.p
                 key={idx}
-                className="text-lg font-regular text-gray-600"
+                className="text-lg text-gray-600"
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
                 exit={{ opacity: 0, x: 20 }}
@@ -180,9 +174,7 @@ export default function Project({ project }) {
                 exit={{ opacity: 0, y: -20 }}
                 transition={{ duration: 0.6 }}
                 className="cursor-pointer hover:underline"
-                style={{
-                  color: project.color,
-                }}
+                style={{ color: project.color }}
                 onClick={handleNavigate}
               >
                 {getProjectLinkedTranslated()}
@@ -192,8 +184,8 @@ export default function Project({ project }) {
         </div>
       </div>
 
-      {/* Images + Carousel */}
-      <div className="w-full lg:w-1/2 relative flex flex-col items-center justify-center overflow-hidden h-[60vh] lg:h-auto">
+      {/* Carousel */}
+      <div className="w-full relative flex flex-col items-center justify-center overflow-hidden h-[60vh] lg:w-1/2 lg:h-auto">
         <button
           onClick={prevSlide}
           className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-4 z-20 shadow-lg hover:bg-gray-700 transition rounded"
@@ -207,12 +199,11 @@ export default function Project({ project }) {
               key={index}
               src={"/" + project.photos[index]?.photo}
               alt="Slide"
-              className="max-h-[50vh] lg:max-h-full w-auto object-contain"
+              className="w-full h-auto max-h-[60vh] object-contain lg:max-h-full lg:w-auto"
               initial={{ opacity: 0, scale: 1.05 }}
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 1.05 }}
               transition={{ duration: 0.8, ease: "easeInOut" }}
-              style={{ position: "relative" }}
             />
           </AnimatePresence>
         ) : (
@@ -226,7 +217,6 @@ export default function Project({ project }) {
           ▶
         </button>
 
-        {/* Barre de progression */}
         {project.photos && project.photos.length > 1 && (
           <div className="w-full mt-2 lg:absolute lg:bottom-2 lg:left-0">
             <ProgressBar
