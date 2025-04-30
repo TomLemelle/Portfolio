@@ -10,9 +10,9 @@ const portfolioProjects = [
     texts: [
       {
         text: {
-          fr: "Développement d'une plateforme innovante en React et Adonis, entièrement en TypeScript, pour faciliter la gestion des allergènes en restauration. SafeEat aide les restaurateurs à mieux informer leurs clients et à garantir une expérience culinaire sécurisée et conforme aux réglementations.",
-          en: "Development of an innovative platform in React and Adonis, fully in TypeScript, to facilitate allergen management in restaurants. SafeEat helps restaurateurs better inform their customers and ensure a safe dining experience compliant with regulations.",
-          it: "Sviluppo di una piattaforma innovativa in React e Adonis, completamente in TypeScript, per facilitare la gestione degli allergeni nei ristoranti. SafeEat aiuta i ristoratori a informare meglio i loro clienti e a garantire un'esperienza culinaria sicura e conforme alle normative.",
+          fr: "Développement d’une plateforme digitale innovante pour la gestion des allergènes en restauration, pensée pour les restaurateurs, cantines et traiteurs. Avec SafeEat, les professionnels peuvent créer le profil de leur établissement, renseigner leurs recettes en détaillant précisément toutes les matières premières utilisées, puis les organiser en menus complets. Ces informations sont accessibles aux clients via un QR code dynamique, leur offrant une navigation mobile optimisée.\n\nLes utilisateurs peuvent ainsi filtrer en temps réel les plats et menus selon leurs allergies, intolérances ou régimes alimentaires spécifiques, garantissant une expérience culinaire à la fois sûre, personnalisée et conforme aux réglementations.\n\nPour les restaurateurs, SafeEat propose aussi un export détaillé des recettes incluant les allergènes présents, la date de dernière mise à jour, et un tableau clair par plat. Un système de commentaires permet aux clients de donner des retours directs, et un tableau de bord avec graphique indique quelles recettes contiennent le plus d’allergènes, aidant ainsi à ajuster l’offre.\n\nEn tant que cofondateur et CTO, j’ai réalisé le développement complet (React, AdonisJS, TypeScript) et assuré l’infrastructure (Docker, PostgreSQL, CI/CD, VPS). Ce projet a été testé avec succès, notamment par le Bouillon d'Or à Rouen.",
+          en: "Development of an innovative digital platform for allergen management in restaurants, designed for restaurateurs, canteens, and caterers. With SafeEat, professionals can create their restaurant profile, add detailed recipes with all raw ingredients, and organize them into complete menus. This information is accessible to customers via a dynamic QR code, providing an optimized mobile browsing experience.\n\nUsers can filter dishes and menus in real-time based on their allergies, intolerances, or dietary preferences, ensuring a safe, personalized, and compliant dining experience.\n\nFor restaurant owners, SafeEat also offers detailed recipe exports listing allergens, last updated dates, and a clear table per dish. A comment system allows customers to provide direct feedback, while an analytics dashboard highlights recipes with the most allergens, helping to adjust the menu.\n\nAs co-founder and CTO, I led the full development (React, AdonisJS, TypeScript) and managed the infrastructure (Docker, PostgreSQL, CI/CD, VPS). This major project has been successfully tested, notably by Bouillon d'Or in Rouen.",
+          it: "Sviluppo di una piattaforma digitale innovativa per la gestione degli allergeni nella ristorazione, pensata per ristoratori, mense e catering. Con SafeEat, i professionisti possono creare il profilo del proprio locale, inserire ricette dettagliate con tutti gli ingredienti utilizzati e organizzarle in menu completi. Queste informazioni sono accessibili ai clienti tramite un QR code dinamico, offrendo una navigazione mobile ottimizzata.\n\nGli utenti possono filtrare in tempo reale i piatti e i menu in base alle proprie allergie, intolleranze o preferenze alimentari, garantendo un’esperienza culinaria sicura, personalizzata e conforme alle normative.\n\nPer i ristoratori, SafeEat offre anche l’esportazione dettagliata delle ricette con l’elenco degli allergeni, la data dell’ultimo aggiornamento e una tabella chiara per ogni piatto. Un sistema di commenti permette ai clienti di fornire feedback diretti, mentre una dashboard analitica evidenzia le ricette con più allergeni, aiutando a migliorare l’offerta.\n\nCome cofondatore e CTO, ho curato lo sviluppo completo (React, AdonisJS, TypeScript) e gestito l'infrastruttura (Docker, PostgreSQL, CI/CD, VPS). Questo progetto importante è stato testato con successo, in particolare dal Bouillon d'Or di Rouen.",
         },
       },
     ],
@@ -25,6 +25,18 @@ const portfolioProjects = [
     photos: [
       {
         photo: "realisations/safeeat-thumbnail.png",
+      },
+      {
+        photo: "realisations/safeeat-project1.jpg",
+      },
+      {
+        photo: "realisations/safeeat-project2.jpg",
+      },
+      {
+        photo: "realisations/safeeat-project3.jpg",
+      },
+      {
+        photo: "realisations/safeeat-project4.jpg",
       },
     ],
     linked: null,
