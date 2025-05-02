@@ -1,4 +1,9 @@
 {
+  "nav": {
+    "home": "Home",
+    "about": "Chi sono",
+    "realisations": "Progetti"
+  },
   "home": {
     "herobanner": {
       "contactMe": "Contattami",
@@ -13,19 +18,19 @@
       "serviceCards": {
         "custom": {
           "heading": "Applicazione personalizzata",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor."
+          "description": "Sviluppo applicazioni web su misura, pensate per semplificare i tuoi processi e far crescere il tuo business. Affidabili, veloci e costruite intorno alle tue esigenze."
         },
         "webflow": {
           "heading": "Webflow",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor."
+          "description": "Realizzo siti moderni ed eleganti con Webflow, facili da gestire e ottimizzati per valorizzare la tua attività. Zero codice, 100% impatto."
         },
         "photography": {
           "heading": "Fotografia",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor."
+          "description": "Realizzo ritratti e foto corporate autentiche, per rafforzare il tuo brand e creare contenuti che ti rappresentano davvero."
         },
         "video": {
           "heading": "Video",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor."
+          "description": "Produco video coinvolgenti per raccontare la tua storia, promuovere i tuoi servizi e catturare l’attenzione sul web e sui social."
         }
       }
     },
@@ -68,6 +73,7 @@
       "photo": "Fotografia / Video"
     }
   },
+
   "projects": {
     "type": {
       "custom": "App Personalizzata",

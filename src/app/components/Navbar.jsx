@@ -6,9 +6,11 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 import "./Navbar.css";
 import LanguageSwitcher from "./Translation/LanguageSwitcher";
+import { useTranslation } from "@/app/contexts/TranslationProvider";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const { dictionary, locale } = useTranslation();
 
   return (
     <>
@@ -43,13 +45,13 @@ export default function Navbar() {
           {/* Navigation Desktop */}
           <ul className="links-container">
             <li className="link">
-              <Link href="/">Accueil</Link>
+              <Link href="/">{dictionary.nav.home}</Link>
             </li>
             <li className="link">
-              <Link href="/about-me">À propos</Link>
+              <Link href="/about-me">{dictionary.nav.about}</Link>
             </li>
             <li className="link">
-              <Link href="/realisations">Réalisations</Link>
+              <Link href="/realisations">{dictionary.nav.realisations}</Link>
             </li>
           </ul>
 

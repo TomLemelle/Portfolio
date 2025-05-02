@@ -1,4 +1,9 @@
 {
+  "nav": {
+    "home": "Home",
+    "about": "About Me",
+    "realisations": "My Work"
+  },
   "home": {
     "herobanner": {
       "contactMe": "Contact me",
@@ -12,20 +17,20 @@
       "heading": "The services I offer",
       "serviceCards": {
         "custom": {
-          "heading": "Customised application",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor."
+          "heading": "Custom Application",
+          "description": "I develop tailor-made web applications, designed to simplify your processes and boost your growth. Reliable, fast, and built around your needs."
         },
         "webflow": {
           "heading": "Webflow",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor."
+          "description": "I create modern and elegant websites with Webflow, easy to manage and optimized to showcase your business. No code, 100% impact."
         },
         "photography": {
           "heading": "Photography",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor."
+          "description": "I capture authentic portraits and corporate photos to strengthen your brand and create content that truly reflects you."
         },
         "video": {
           "heading": "Video",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor."
+          "description": "I produce engaging videos to tell your story, promote your services, and grab attention online and on social media."
         }
       }
     },
